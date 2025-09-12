@@ -6,8 +6,100 @@
     <title>Sagit</title>
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+        .countdown-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 16px;
+            text-align: center;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #0001;
+        }
+        .countdown-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        #progress-container {
+            background: #eee;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 40px;
+            width: 100%;
+            margin: 30px 0 10px 0;
+            box-shadow: 0 2px 8px #0001;
+        }
+        #progress-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            transition: width 0.5s;
+        }
+        #progress-text {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .countdown-container {
+                max-width: 98vw;
+                margin: 16px 1vw;
+                padding: 8vw 2vw;
+            }
+            .countdown-title {
+                font-size: 1.1em;
+            }
+            #progress-container {
+                height: 28px;
+            }
+            #progress-text {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="countdown-container">
+        <div class="countdown-title">Countdown to September 17, 2026</div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="progress-text"></div>
+    </div>
+    <script>
+        // Set the target date
+        const targetDate = new Date('2026-09-17T00:00:00');
+        // Set the start date (now)
+        const startDate = new Date();
+        // For a true countdown, you may want to set a fixed start date, e.g. when the project started
+        // const startDate = new Date('2025-09-12T00:00:00');
+
+        function updateProgressBar() {
+            const now = new Date();
+            const total = targetDate - startDate;
+            const elapsed = now - startDate;
+            let percent = 100 - Math.max(0, Math.min(100, (elapsed / total) * 100));
+            percent = percent < 0 ? 0 : percent;
+            document.getElementById('progress-bar').style.width = percent + '%';
+
+            // Calculate time left
+            let diff = targetDate - now;
+            if (diff < 0) diff = 0;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('progress-text').textContent =
+                `Time left: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+        updateProgressBar();
+        setInterval(updateProgressBar, 1000);
+    </script>
 </body>
 </html>
