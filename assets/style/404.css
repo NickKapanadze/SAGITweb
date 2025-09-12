@@ -67,10 +67,13 @@ a:hover {
   .container {
     flex-direction: column;
     gap: 16px;
-    padding: 24px 0;
+    padding: 72px 0;
   }
   .image-container {
     margin-top: 12px;
+  }
+  .content {
+    flex: 0.5 0.5 100%;
   }
 }
 
