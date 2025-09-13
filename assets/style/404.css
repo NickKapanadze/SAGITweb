@@ -1,0 +1,56 @@
+body {
+	background: radial-gradient(circle, #711416, #390A0B);
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #f1f1f1;
+}
+
+.error-container {
+	text-align: center;
+	padding: 40px 24px;
+	background: rgba(30, 10, 10, 0.85);
+	border-radius: 18px;
+	box-shadow: 0 4px 32px #0008;
+	max-width: 420px;
+}
+
+.error-code {
+	font-size: 7rem;
+	font-weight: bold;
+	color: #E6B76C;
+	margin-bottom: 0.2em;
+	letter-spacing: 0.1em;
+	text-shadow: 0 2px 16px #E6B76C44;
+}
+
+.error-message {
+	font-size: 1.5rem;
+	margin-bottom: 1.5em;
+	color: #fff;
+	opacity: 0.92;
+}
+
+.home-btn {
+	display: inline-block;
+	padding: 12px 32px;
+	background: #E6B76C;
+	color: #390A0B;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 2px 8px #E6B76C33;
+	transition: background 0.2s, color 0.2s, transform 0.2s;
+	cursor: pointer;
+}
+.home-btn:hover {
+	background: #fff;
+	color: #711416;
+	transform: scale(1.04);
+}
