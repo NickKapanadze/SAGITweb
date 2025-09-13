@@ -2,12 +2,66 @@ body {
     background: radial-gradient(circle, #711416, #390A0B);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
     text-align: center;
     position: relative;
     z-index: 0;
+}
+
+.main-header {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px 10px 40px;
+    box-sizing: border-box;
+    background: rgba(30, 10, 10, 0.85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+}
+.logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+.nav-link {
+    color: #E6B76C;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #fff;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.ig-icon svg {
+    display: block;
+    transition: transform 0.2s;
+}
+.ig-icon:hover svg {
+    transform: scale(1.12) rotate(-8deg);
+    filter: drop-shadow(0 0 4px #E6B76C88);
+}
+.container {
+    margin-top: 90px;
 }
 
 body::before {
