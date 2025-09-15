@@ -3,74 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagit</title>
+    <title>SAGIT - საქართველოს ტექნოლოგიების ინსტიტუტი</title>
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>  
     <header class="main-header">
         <div class="logo">
-            <!-- Replace with your logo image if available -->
-            <img src="/assets/images/bg.png" alt="Logo" style="height:40px; width:auto; border-radius:8px;">
+            <img src="/assets/images/bg.png" alt="SAGIT Logo">
+            <span class="logo-text">SAGIT</span>
         </div>
         <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-            <span class="hamburger-icon">sa
+            <span class="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </span>
         </button>
         <nav class="nav-menu">
-            <a href="#" class="nav-link">მთავარი</a>
-            <a href="#" class="nav-link">ჩვენს შესახებ</a>
-            <a href="#" class="nav-link">პორტალი</a>
+            <a href="index.html" class="nav-link active">მთავარი</a>
+            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link">პროგრამები</a>
+            <a href="admissions.html" class="nav-link">მიღება</a>
+            <a href="contact.html" class="nav-link">კონტაქტი</a>
         </nav>
         <div class="social-icons">
             <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
-                <!-- Simple Instagram SVG icon -->
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
                   <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
                   <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
                 </svg>
             </a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
         </div>
     </header>
 
-    <div class="banner slideshow-container" style="z-index: 2; margin-top:64px; margin-bottom:0; text-align:center; overflow:hidden; filter: drop-shadow(0 2px 16px #0008);">
-        <img src="/assets/images/banner1.png" alt="Banner Image" style="width:100vw; max-height:40vh; object-fit:cover;" />
-    </div>
-    <div class="info-text" style="position: relative; top: -5px; z-index: 1; background-color: #f1f1f1; width: 100%; height: 40vh; display: flex; align-items: center; justify-content: center; font-family: Arial, sans-serif;">
-        <p>ჩვენი გუნდი მუშაობს ახალი და საინტერესო პროექტების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი!</p>
+    <section class="hero" style="background-image: url('/assets/images/banner1.png');">
+        <div class="hero-content">
+            <h1>საქართველოს ტექნოლოგიების ინსტიტუტი</h1>
+            <p>სწავლება ინოვაციის, კვლევისა და განვითარების სამსახურში</p>
+            <div>
+                <a href="programs.html" class="btn">ჩვენი პროგრამები</a>
+                <a href="about.html" class="btn btn-outline">გაიგე მეტი</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="section features">
+        <div class="container">
+            <h2 class="text-center">რატომ SAGIT?</h2>
+            <p class="text-center">აღმოაჩინეთ თუ რატომ არის SAGIT საუკეთესო არჩევანი თქვენი აკადემიური და პროფესიული ზრდისთვის</p>
+            
+            <div class="grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>თანამედროვე სასწავლო პროგრამები</h3>
+                    <p>ჩვენი პროგრამები შემუშავებულია ინდუსტრიის საუკეთესო პრაქტიკოსებთან ერთად, რათა მოგაწოდოთ რელევანტური და მოთხოვნადი უნარები.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>ინოვაციური კვლევა</h3>
+                    <p>ჩვენი კვლევითი ცენტრები და ლაბორატორიები საშუალებას გაძლევთ ჩაერთოთ წამყვან ტექნოლოგიურ პროექტებში.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>ექსპერტი პედაგოგები</h3>
+                    <p>ისწავლეთ ინდუსტრიის წამყვანი პროფესიონალებისგან და აკადემიური ექსპერტებისგან, რომელთაც აქვთ მდიდარი პრაქტიკული გამოცდილება.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-text">
+        <p>SAGIT-ის გუნდი მუშაობს ახალი და საინტერესო საგანმანათლებლო პროგრამების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი საქართველოს წამყვანი ტექნოლოგიური უნივერსიტეტის შესახებ!</p>
     </div>
 
-    <div class="container">
-        <div class="time, 1">
-            <H1>00 თვე</H1>
-            <progress value="5" max="12"></progress>
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">ახალი პროგრამების დაწყებამდე</h2>
+            <div class="countdown">
+                <div class="time-box">
+                    <h3 id="months">00</h3>
+                    <p>თვე</p>
+                    <progress id="months-progress" value="0" max="12"></progress>
+                </div>
+                <div class="time-box">
+                    <h3 id="days">00</h3>
+                    <p>დღე</p>
+                    <progress id="days-progress" value="0" max="30"></progress>
+                </div>
+                <div class="time-box">
+                    <h3 id="hours">00</h3>
+                    <p>საათი</p>
+                    <progress id="hours-progress" value="0" max="24"></progress>
+                </div>
+                <div class="time-box">
+                    <h3 id="minutes">00</h3>
+                    <p>წუთი</p>
+                    <progress id="minutes-progress" value="0" max="60"></progress>
+                </div>
+                <div class="time-box">
+                    <h3 id="seconds">00</h3>
+                    <p>წამი</p>
+                    <progress id="seconds-progress" value="0" max="60"></progress>
+                </div>
+            </div>
         </div>
-        <div class="time, 2">
-            <h1>00 დღე</h1>
-            <progress value="13" max="30"></progress>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">უახლესი სიახლეები</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">ახალი ტექნოლოგიური ლაბორატორია</h3>
+                        <p>SAGIT-ის ახალი ლაბორატორია აღჭურვილია უახლესი ტექნოლოგიებით და მზადაა სტუდენტების მისაღებად.</p>
+                        <a href="#" class="btn">სრულად ნახვა</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">საერთაშორისო პარტნიორობა</h3>
+                        <p>SAGIT-მა ხელი მოაწერა თანამშრომლობის მემორანდუმს ევროპის წამყვან ტექნოლოგიურ უნივერსიტეტებთან.</p>
+                        <a href="#" class="btn">სრულად ნახვა</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">სტიპენდიები 2025-2026 წლისთვის</h3>
+                        <p>შეიტყვეთ მეტი ჩვენი განახლებული სასტიპენდიო პროგრამების შესახებ მომავალი აკადემიური წლისთვის.</p>
+                        <a href="#" class="btn">სრულად ნახვა</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="time, 3">
-            <h1>00 საათი</h1>
-            <progress value="4" max="24"></progress>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SAGIT</h4>
+                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>სწრაფი ბმულები</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="about.html">ჩვენს შესახებ</a></li>
+                        <li><a href="programs.html">პროგრამები</a></li>
+                        <li><a href="admissions.html">მიღება</a></li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>კონტაქტი</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> რუსთაველის გამზირი 19, თბილისი</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
+                    <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 საქართველოს ტექნოლოგიების ინსტიტუტი. ყველა უფლება დაცულია.</p>
+            </div>
         </div>
-        <div class="time, 4">
-            <h1>00 წუთი</h1>
-            <progress value="35" max="60"></progress>
-        </div>
-        <div class="time, 5">
-            <h1>00 წამი</h1>
-            <progress value="49" max="60"></progress>
-        </div>
-    </div>
+    </footer>
+
     <script>
     const target_date = new Date("2025-10-20T13:30:00");
+    
     function updateCountdown() {
         const now = new Date();
         const difference = target_date - now;
@@ -82,17 +213,17 @@
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
             
-            document.querySelectorAll('h1')[0].textContent = `${months.toString().padStart(2, '0')} თვე`;
-            document.querySelectorAll('h1')[1].textContent = `${days.toString().padStart(2, '0')} დღე`;
-            document.querySelectorAll('h1')[2].textContent = `${hours.toString().padStart(2, '0')} საათი`;
-            document.querySelectorAll('h1')[3].textContent = `${minutes.toString().padStart(2, '0')} წუთი`;
-            document.querySelectorAll('h1')[4].textContent = `${seconds.toString().padStart(2, '0')} წამი`;
+            document.getElementById('months').textContent = months.toString().padStart(2, '0');
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
             
-            document.querySelectorAll('progress')[0].value = months;
-            document.querySelectorAll('progress')[1].value = days;
-            document.querySelectorAll('progress')[2].value = hours;
-            document.querySelectorAll('progress')[3].value = minutes;
-            document.querySelectorAll('progress')[4].value = seconds;
+            document.getElementById('months-progress').value = months;
+            document.getElementById('days-progress').value = days;
+            document.getElementById('hours-progress').value = hours;
+            document.getElementById('minutes-progress').value = minutes;
+            document.getElementById('seconds-progress').value = seconds;
         }
     }
 

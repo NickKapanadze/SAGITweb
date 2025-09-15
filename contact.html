@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი - SAGIT</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="/assets/style/modern.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>  
+    <header class="main-header">
+        <div class="logo">
+            <img src="/assets/images/bg.png" alt="SAGIT Logo">
+            <span class="logo-text">SAGIT</span>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">მთავარი</a>
+            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link">პროგრამები</a>
+            <a href="admissions.html" class="nav-link">მიღება</a>
+            <a href="contact.html" class="nav-link active">კონტაქტი</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
+                  <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
+                  <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="/assets/images/banner1.png" alt="Contact Us" style="height: 400px;">
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="text-center">დაგვიკავშირდით</h1>
+            <p class="text-center">გაქვთ კითხვები? დაგვიკავშირდით და SAGIT-ის გუნდი დაგეხმარებათ.</p>
+            
+            <div class="grid" style="margin-top: 3rem;">
+                <div>
+                    <h2>საკონტაქტო ინფორმაცია</h2>
+                    
+                    <div style="margin-top: 2rem;">
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>მისამართი:</strong><br>რუსთაველის გამზირი 19, თბილისი, 0108, საქართველო</p>
+                        
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>ტელეფონი:</strong><br>+995 32 222 33 44</p>
+                        
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>ელ-ფოსტა:</strong><br>info@sagit.edu.ge</p>
+                        
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>სამუშაო საათები:</strong><br>ორშაბათი - პარასკევი: 9:00 - 18:00<br>შაბათი: 10:00 - 15:00<br>კვირა: დახურულია</p>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h3>გამოგვყევით სოციალურ ქსელებში</h3>
+                        <div style="margin-top: 1rem; display: flex; gap: 15px;">
+                            <a href="https://www.instagram.com/sgt_uni/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.youtube.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>მოგვწერეთ</h2>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">სახელი და გვარი *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">ელ-ფოსტა *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">ტელეფონის ნომერი</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">თემა *</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">აირჩიეთ თემა</option>
+                                <option value="admission">მიღების შესახებ</option>
+                                <option value="programs">საგანმანათლებლო პროგრამები</option>
+                                <option value="scholarships">სტიპენდიები და ფინანსური დახმარება</option>
+                                <option value="careers">კარიერა SAGIT-ში</option>
+                                <option value="other">სხვა</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">შეტყობინება *</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">გაგზავნა</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="text-center">ჩვენი მდებარეობა</h2>
+            
+            <div style="margin-top: 2rem; width: 100%; height: 450px; border-radius: 8px; overflow: hidden;">
+                <!-- Replace with an actual Google Maps embed code for your location -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.1284001196424!2d44.7963893!3d41.7018888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cdd1af7ece7%3A0xf2732bd530018f6!2sShota%20Rustaveli%20Avenue%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1663000000000!5m2!1sen!2sge" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: rgba(30, 10, 10, 0.75);">
+        <div class="container">
+            <h2 class="text-center">დეპარტამენტები</h2>
+            <p class="text-center">პირდაპირ დაუკავშირდით შესაბამის დეპარტამენტს თქვენი კითხვებით</p>
+            
+            <div class="grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>მიღების დეპარტამენტი</h3>
+                    <p>დაგვიკავშირდით მიღების პროცესთან და მოთხოვნებთან დაკავშირებული კითხვებით.</p>
+                    <p><i class="fas fa-envelope"></i> admissions@sagit.edu.ge</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 55</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>აკადემიური დეპარტამენტი</h3>
+                    <p>დაგვიკავშირდით სასწავლო პროგრამებთან და კურსებთან დაკავშირებული კითხვებით.</p>
+                    <p><i class="fas fa-envelope"></i> academic@sagit.edu.ge</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 66</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>ფინანსური დახმარება</h3>
+                    <p>დაგვიკავშირდით სტიპენდიებთან და ფინანსურ დახმარებასთან დაკავშირებული კითხვებით.</p>
+                    <p><i class="fas fa-envelope"></i> financial.aid@sagit.edu.ge</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 77</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>პარტნიორობა და თანამშრომლობა</h3>
+                    <p>დაგვიკავშირდით ბიზნეს პარტნიორობასთან და აკადემიურ თანამშრომლობასთან დაკავშირებით.</p>
+                    <p><i class="fas fa-envelope"></i> partnerships@sagit.edu.ge</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 88</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <h2>ხშირად დასმული კითხვები</h2>
+            <p>ვერ იპოვეთ პასუხი თქვენს კითხვაზე? გაეცანით ჩვენს ხშირად დასმულ კითხვებს ან დაგვიკავშირდით პირდაპირ.</p>
+            <a href="#" class="btn" style="margin-top: 1.5rem;">FAQ</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SAGIT</h4>
+                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>სწრაფი ბმულები</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="about.html">ჩვენს შესახებ</a></li>
+                        <li><a href="programs.html">პროგრამები</a></li>
+                        <li><a href="admissions.html">მიღება</a></li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>კონტაქტი</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> რუსთაველის გამზირი 19, თბილისი</p>
+                    <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
+                    <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 საქართველოს ტექნოლოგიების ინსტიტუტი. ყველა უფლება დაცულია.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა. ჩვენ მალე დაგიკავშირდებით.');
+                contactForm.reset();
+            });
+        }
+    });
+    </script>
+</body>
+</html>

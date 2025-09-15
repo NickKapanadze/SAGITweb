@@ -3,18 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagit - 404 Not Found</title>
+    <title>SAGIT - 404 Not Found</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="/assets/style/404.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="/assets/images/bg.png" alt="SAGIT Logo">
+            <span class="logo-text">SAGIT</span>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">მთავარი</a>
+            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link">პროგრამები</a>
+            <a href="admissions.html" class="nav-link">მიღება</a>
+            <a href="contact.html" class="nav-link">კონტაქტი</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
+                  <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
+                  <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
     <div class="error-container">
         <div class="error-code">404</div>
         <div class="error-message">მანდ რა გინდა ეს... ?<br>გვერდი, რომელსაც ეძებთ, არ არსებობს.</div>
-        <a href="/" class="home-btn">მთავარ გვერდზე დაბრუნება</a>
+        <a href="/" class="btn">მთავარ გვერდზე დაბრუნება</a>
     </div>
     <div style="margin:32px; text-align:center;">
-        <img src="/assets/images/hqdefault.jpg" alt="404 Image" style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 2px 16px #0008; opacity:0.92;" />
+        <img src="/assets/images/hqdefault.jpg" alt="404 Image" style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 2px 16px rgba(0,0,0,0.5); opacity:0.92;" />
     </div>
+
+    <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    });
+    </script>
 </body>
 </html>
