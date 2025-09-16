@@ -8,6 +8,12 @@ async function loadTranslations() {
         const response = await fetch('/assets/lang.json');
         translations = await response.json();
         applyTranslations();
+        
+        // Initialize dynamic content if available
+        if (window.dynamicContent) {
+            window.dynamicContent.init(translations);
+            window.dynamicContent.updateLanguage(currentLang);
+        }
     } catch (error) {
         console.error('Error loading translations:', error);
     }
@@ -52,6 +58,11 @@ function switchLanguage() {
     currentLang = currentLang === 'ge' ? 'en' : 'ge';
     localStorage.setItem('language', currentLang);
     applyTranslations();
+    
+    // Update dynamic content if available
+    if (window.dynamicContent) {
+        window.dynamicContent.updateLanguage(currentLang);
+    }
 }
 
 // Initialize language settings

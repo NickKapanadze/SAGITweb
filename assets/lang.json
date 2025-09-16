@@ -106,20 +106,246 @@
         "subtitle": "გაიცანით საღუნი-ის ლიდერები და აკადემიური პერსონალი",
         "members": [
           {
+            "id": 1,
             "name": "დავით გიორგაძე",
-            "position": "რექტორი"
+            "position": "რექტორი",
+            "bio": "20 წლიანი გამოცდილება ტექნოლოგიური განათლების სფეროში",
+            "image": "/assets/images/team/davit-giorgadze.jpg",
+            "email": "d.giorgadze@sagit.edu.ge",
+            "expertise": ["განათლების მენეჯმენტი", "სტრატეგიული დაგეგმვა", "ინოვაციები"]
           },
           {
+            "id": 2,
             "name": "თამარ მაისურაძე",
-            "position": "აკადემიური დირექტორი"
+            "position": "აკადემიური დირექტორი",
+            "bio": "კომპიუტერული მეცნიერებების დოქტორი, 15 წლიანი პედაგოგიური გამოცდილება",
+            "image": "/assets/images/team/tamar-maisuradze.jpg",
+            "email": "t.maisuradze@sagit.edu.ge",
+            "expertise": ["კომპიუტერული მეცნიერება", "მონაცემთა ანალიზი", "აკადემიური კურიკულუმი"]
           },
           {
+            "id": 3,
             "name": "გიორგი კაპანაძე",
-            "position": "კვლევების დირექტორი"
+            "position": "კვლევების დირექტორი",
+            "bio": "ხელოვნური ინტელექტის სპეციალისტი, 12 წლიანი კვლევითი გამოცდილება",
+            "image": "/assets/images/team/giorgi-kapanadze.jpg",
+            "email": "g.kapanadze@sagit.edu.ge",
+            "expertise": ["ხელოვნური ინტელექტი", "მანქანური სწავლება", "კვლევა და განვითარება"]
           },
           {
+            "id": 4,
             "name": "ნინო წერეთელი",
-            "position": "საერთაშორისო ურთიერთობების ხელმძღვანელი"
+            "position": "საერთაშორისო ურთიერთობების ხელმძღვანელი",
+            "bio": "საერთაშორისო ბიზნესის მაგისტრი, 10 წლიანი გამოცდილება",
+            "image": "/assets/images/team/nino-tsereteli.jpg",
+            "email": "n.tsereteli@sagit.edu.ge",
+            "expertise": ["საერთაშორისო პარტნიორობა", "პროექტების მენეჯმენტი", "კულტურათაშორისი კომუნიკაცია"]
+          }
+        ]
+      },
+      "programs": {
+        "title": "აკადემიური პროგრამები",
+        "subtitle": "აღმოაჩინეთ ჩვენი ინოვაციური სასწავლო პროგრამები",
+        "categories": [
+          {
+            "id": 1,
+            "name": "კომპიუტერული მეცნიერება და ინჟინერია",
+            "description": "ფოკუსირებულია პროგრამული უზრუნველყოფის ინჟინერიაზე, ალგორითმებზე, სისტემების არქიტექტურაზე და კომპიუტერულ ქსელებზე",
+            "icon": "fas fa-code",
+            "color": "#3B82F6",
+            "programs": [
+              {
+                "id": 1,
+                "name": "პროგრამული უზრუნველყოფის ინჟინერია",
+                "duration": "4 წელი",
+                "degree": "ბაკალავრი",
+                "description": "თანამედროვე პროგრამირების ენები, ვები და მობაილური აპლიკაციები, მონაცემთა ბაზები",
+                "skills": ["JavaScript", "Python", "React", "Node.js", "MongoDB", "Git"]
+              },
+              {
+                "id": 2,
+                "name": "კომპიუტერული სისტემები",
+                "duration": "4 წელი",
+                "degree": "ბაკალავრი",
+                "description": "კომპიუტერული არქიტექტურა, ოპერაციული სისტემები, ქსელური ტექნოლოგიები",
+                "skills": ["C++", "Linux", "Networking", "Cloud Computing", "DevOps", "Cybersecurity"]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "მონაცემთა მეცნიერება და ხელოვნური ინტელექტი",
+            "description": "კონცენტრირებულია მონაცემთა ანალიზზე, მანქანურ სწავლებაზე, ღრმა სწავლებაზე და პროგნოზირებად ანალიტიკაზე",
+            "icon": "fas fa-brain",
+            "color": "#10B981",
+            "programs": [
+              {
+                "id": 3,
+                "name": "მონაცემთა მეცნიერება",
+                "duration": "4 წელი",
+                "degree": "ბაკალავრი",
+                "description": "სტატისტიკური ანალიზი, მონაცემების ვიზუალიზაცია, მანქანური სწავლება",
+                "skills": ["Python", "R", "SQL", "Tableau", "Machine Learning", "Statistics"]
+              },
+              {
+                "id": 4,
+                "name": "ხელოვნური ინტელექტი",
+                "duration": "2 წელი",
+                "degree": "მაგისტრი",
+                "description": "ღრმა სწავლება, ნეირონული ქსელები, კომპიუტერული ხედვა",
+                "skills": ["TensorFlow", "PyTorch", "Deep Learning", "NLP", "Computer Vision", "Reinforcement Learning"]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "კიბერუსაფრთხოება და ციფრული ფორენზიკა",
+            "description": "ორიენტირებულია ინფორმაციულ უსაფრთხოებაზე, ქსელურ დაცვაზე, კრიპტოგრაფიაზე და უსაფრთხოების აუდიტზე",
+            "icon": "fas fa-shield-alt",
+            "color": "#EF4444",
+            "programs": [
+              {
+                "id": 5,
+                "name": "კიბერუსაფრთხოება",
+                "duration": "4 წელი",
+                "degree": "ბაკალავრი",
+                "description": "ქსელური უსაფრთხოება, კრიპტოგრაფია, ეთიკური ჰაკერობა",
+                "skills": ["Ethical Hacking", "Cryptography", "Network Security", "Incident Response", "Digital Forensics", "Risk Assessment"]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "ციფრული ბიზნესი და ინოვაციები",
+            "description": "ფოკუსირებულია ციფრულ ტრანსფორმაციაზე, ტექნოლოგიურ მეწარმეობაზე, IT მენეჯმენტსა და ბიზნეს ინოვაციებზე",
+            "icon": "fas fa-lightbulb",
+            "color": "#F59E0B",
+            "programs": [
+              {
+                "id": 6,
+                "name": "ციფრული ბიზნესი",
+                "duration": "4 წელი",
+                "degree": "ბაკალავრი",
+                "description": "ციფრული მარკეტინგი, ელექტრონული კომერცია, ბიზნეს ანალიტიკა",
+                "skills": ["Digital Marketing", "E-commerce", "Business Analytics", "Project Management", "UX/UI Design", "Agile"]
+              }
+            ]
+          }
+        ]
+      },
+      "contact": {
+        "title": "დაგვიკავშირდით",
+        "subtitle": "ჩვენ ყოველთვის მზად ვართ თქვენი კითხვების პასუხისთვის",
+        "info": {
+          "address": {
+            "title": "მისამართი",
+            "value": "ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი, საქართველო",
+            "icon": "fas fa-map-marker-alt"
+          },
+          "phone": {
+            "title": "ტელეფონი",
+            "value": "+995 32 222 33 44",
+            "icon": "fas fa-phone"
+          },
+          "email": {
+            "title": "ელ-ფოსტა",
+            "value": "info@sagit.edu.ge",
+            "icon": "fas fa-envelope"
+          },
+          "hours": {
+            "title": "სამუშაო საათები",
+            "value": "ორშაბათი - პარასკევი: 9:00 - 18:00",
+            "icon": "fas fa-clock"
+          }
+        },
+        "departments": [
+          {
+            "id": 1,
+            "name": "მიღების განყოფილება",
+            "email": "admissions@sagit.edu.ge",
+            "phone": "+995 32 222 33 45",
+            "description": "სტუდენტური მიღების პროცესი და სასტიპენდიო პროგრამები"
+          },
+          {
+            "id": 2,
+            "name": "აკადემიური განყოფილება",
+            "email": "academic@sagit.edu.ge",
+            "phone": "+995 32 222 33 46",
+            "description": "სასწავლო პროგრამები და აკადემიური მხარდაჭერა"
+          },
+          {
+            "id": 3,
+            "name": "საერთაშორისო ურთიერთობები",
+            "email": "international@sagit.edu.ge",
+            "phone": "+995 32 222 33 47",
+            "description": "საერთაშორისო პროგრამები და პარტნიორობა"
+          },
+          {
+            "id": 4,
+            "name": "კვლევითი განყოფილება",
+            "email": "research@sagit.edu.ge",
+            "phone": "+995 32 222 33 48",
+            "description": "კვლევითი პროექტები და თანამშრომლობა"
+          }
+        ]
+      },
+      "social": {
+        "title": "სოციალური ქსელები",
+        "subtitle": "მიყევით ჩვენს სიახლეებს სოციალურ მედიაში",
+        "links": [
+          {
+            "id": 1,
+            "name": "Instagram",
+            "url": "https://www.instagram.com/sagit_uni/",
+            "icon": "fab fa-instagram",
+            "color": "#E4405F",
+            "followers": "2.5K",
+            "description": "ყოველდღიური ცხოვრება კამპუსში"
+          },
+          {
+            "id": 2,
+            "name": "Facebook",
+            "url": "https://www.facebook.com/sagit.edu.ge",
+            "icon": "fab fa-facebook-f",
+            "color": "#1877F2",
+            "followers": "5.2K",
+            "description": "ოფიციალური განახლებები და ღონისძიებები"
+          },
+          {
+            "id": 3,
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/school/sagit/",
+            "icon": "fab fa-linkedin-in",
+            "color": "#0A66C2",
+            "followers": "1.8K",
+            "description": "პროფესიული ქსელი და კარიერა"
+          },
+          {
+            "id": 4,
+            "name": "YouTube",
+            "url": "https://www.youtube.com/@SAGITUniversity",
+            "icon": "fab fa-youtube",
+            "color": "#FF0000",
+            "followers": "3.1K",
+            "description": "ლექციები და უნივერსიტეტის ცხოვრება"
+          },
+          {
+            "id": 5,
+            "name": "Twitter",
+            "url": "https://twitter.com/SAGIT_Uni",
+            "icon": "fab fa-twitter",
+            "color": "#1DA1F2",
+            "followers": "1.2K",
+            "description": "სიახლეები და მოკლე განახლებები"
+          },
+          {
+            "id": 6,
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@sagit_university",
+            "icon": "fab fa-tiktok",
+            "color": "#000000",
+            "followers": "4.7K",
+            "description": "კრეატიული კონტენტი სტუდენტური ცხოვრებიდან"
           }
         ]
       }
@@ -128,7 +354,7 @@
       "description": "სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი - თანამედროვე განათლება ინოვაციური მომავლისთვის",
       "quickLinks": "სწრაფი ბმულები",
       "contact": "კონტაქტი",
-      "address": "რუსთაველის გამზირი 19, თბილისი",
+      "address": "ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი",
       "phone": "+995 32 222 33 44",
       "email": "info@sagit.edu.ge",
       "copyright": "ყველა უფლება დაცულია"
@@ -246,20 +472,246 @@
         "subtitle": "Meet SAGIT's leaders and academic staff",
         "members": [
           {
+            "id": 1,
             "name": "David Giorgadze",
-            "position": "Rector"
+            "position": "Rector",
+            "bio": "20 years of experience in technological education management",
+            "image": "/assets/images/team/davit-giorgadze.jpg",
+            "email": "d.giorgadze@sagit.edu.ge",
+            "expertise": ["Educational Management", "Strategic Planning", "Innovation"]
           },
           {
+            "id": 2,
             "name": "Tamar Maisuradze",
-            "position": "Academic Director"
+            "position": "Academic Director",
+            "bio": "Ph.D. in Computer Science with 15 years of teaching experience",
+            "image": "/assets/images/team/tamar-maisuradze.jpg",
+            "email": "t.maisuradze@sagit.edu.ge",
+            "expertise": ["Computer Science", "Data Analysis", "Academic Curriculum"]
           },
           {
+            "id": 3,
             "name": "Giorgi Kapanadze",
-            "position": "Research Director"
+            "position": "Research Director",
+            "bio": "AI specialist with 12 years of research experience",
+            "image": "/assets/images/team/giorgi-kapanadze.jpg",
+            "email": "g.kapanadze@sagit.edu.ge",
+            "expertise": ["Artificial Intelligence", "Machine Learning", "Research & Development"]
           },
           {
+            "id": 4,
             "name": "Nino Tsereteli",
-            "position": "Head of International Relations"
+            "position": "Head of International Relations",
+            "bio": "Master's in International Business with 10 years of experience",
+            "image": "/assets/images/team/nino-tsereteli.jpg",
+            "email": "n.tsereteli@sagit.edu.ge",
+            "expertise": ["International Partnership", "Project Management", "Cross-cultural Communication"]
+          }
+        ]
+      },
+      "programs": {
+        "title": "Academic Programs",
+        "subtitle": "Discover our innovative educational programs",
+        "categories": [
+          {
+            "id": 1,
+            "name": "Computer Science and Engineering",
+            "description": "Focused on software engineering, algorithms, systems architecture, and computer networks",
+            "icon": "fas fa-code",
+            "color": "#3B82F6",
+            "programs": [
+              {
+                "id": 1,
+                "name": "Software Engineering",
+                "duration": "4 years",
+                "degree": "Bachelor",
+                "description": "Modern programming languages, web and mobile applications, databases",
+                "skills": ["JavaScript", "Python", "React", "Node.js", "MongoDB", "Git"]
+              },
+              {
+                "id": 2,
+                "name": "Computer Systems",
+                "duration": "4 years",
+                "degree": "Bachelor",
+                "description": "Computer architecture, operating systems, network technologies",
+                "skills": ["C++", "Linux", "Networking", "Cloud Computing", "DevOps", "Cybersecurity"]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Data Science and Artificial Intelligence",
+            "description": "Concentrated on data analysis, machine learning, deep learning, and predictive analytics",
+            "icon": "fas fa-brain",
+            "color": "#10B981",
+            "programs": [
+              {
+                "id": 3,
+                "name": "Data Science",
+                "duration": "4 years",
+                "degree": "Bachelor",
+                "description": "Statistical analysis, data visualization, machine learning",
+                "skills": ["Python", "R", "SQL", "Tableau", "Machine Learning", "Statistics"]
+              },
+              {
+                "id": 4,
+                "name": "Artificial Intelligence",
+                "duration": "2 years",
+                "degree": "Master",
+                "description": "Deep learning, neural networks, computer vision",
+                "skills": ["TensorFlow", "PyTorch", "Deep Learning", "NLP", "Computer Vision", "Reinforcement Learning"]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Cybersecurity and Digital Forensics",
+            "description": "Oriented towards information security, network protection, cryptography, and security auditing",
+            "icon": "fas fa-shield-alt",
+            "color": "#EF4444",
+            "programs": [
+              {
+                "id": 5,
+                "name": "Cybersecurity",
+                "duration": "4 years",
+                "degree": "Bachelor",
+                "description": "Network security, cryptography, ethical hacking",
+                "skills": ["Ethical Hacking", "Cryptography", "Network Security", "Incident Response", "Digital Forensics", "Risk Assessment"]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Digital Business and Innovation",
+            "description": "Focused on digital transformation, technology entrepreneurship, IT management, and business innovation",
+            "icon": "fas fa-lightbulb",
+            "color": "#F59E0B",
+            "programs": [
+              {
+                "id": 6,
+                "name": "Digital Business",
+                "duration": "4 years",
+                "degree": "Bachelor",
+                "description": "Digital marketing, e-commerce, business analytics",
+                "skills": ["Digital Marketing", "E-commerce", "Business Analytics", "Project Management", "UX/UI Design", "Agile"]
+              }
+            ]
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contact Us",
+        "subtitle": "We're always ready to answer your questions",
+        "info": {
+          "address": {
+            "title": "Address",
+            "value": "Kvemo Ponichala, 19 Rustaveli Street, Tbilisi, Georgia",
+            "icon": "fas fa-map-marker-alt"
+          },
+          "phone": {
+            "title": "Phone",
+            "value": "+995 32 222 33 44",
+            "icon": "fas fa-phone"
+          },
+          "email": {
+            "title": "Email",
+            "value": "info@sagit.edu.ge",
+            "icon": "fas fa-envelope"
+          },
+          "hours": {
+            "title": "Working Hours",
+            "value": "Monday - Friday: 9:00 - 18:00",
+            "icon": "fas fa-clock"
+          }
+        },
+        "departments": [
+          {
+            "id": 1,
+            "name": "Admissions Office",
+            "email": "admissions@sagit.edu.ge",
+            "phone": "+995 32 222 33 45",
+            "description": "Student admission process and scholarship programs"
+          },
+          {
+            "id": 2,
+            "name": "Academic Department",
+            "email": "academic@sagit.edu.ge",
+            "phone": "+995 32 222 33 46",
+            "description": "Academic programs and student support"
+          },
+          {
+            "id": 3,
+            "name": "International Relations",
+            "email": "international@sagit.edu.ge",
+            "phone": "+995 32 222 33 47",
+            "description": "International programs and partnerships"
+          },
+          {
+            "id": 4,
+            "name": "Research Department",
+            "email": "research@sagit.edu.ge",
+            "phone": "+995 32 222 33 48",
+            "description": "Research projects and collaboration"
+          }
+        ]
+      },
+      "social": {
+        "title": "Social Media",
+        "subtitle": "Follow our news on social media",
+        "links": [
+          {
+            "id": 1,
+            "name": "Instagram",
+            "url": "https://www.instagram.com/sagit_uni/",
+            "icon": "fab fa-instagram",
+            "color": "#E4405F",
+            "followers": "2.5K",
+            "description": "Daily campus life"
+          },
+          {
+            "id": 2,
+            "name": "Facebook",
+            "url": "https://www.facebook.com/sagit.edu.ge",
+            "icon": "fab fa-facebook-f",
+            "color": "#1877F2",
+            "followers": "5.2K",
+            "description": "Official updates and events"
+          },
+          {
+            "id": 3,
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/school/sagit/",
+            "icon": "fab fa-linkedin-in",
+            "color": "#0A66C2",
+            "followers": "1.8K",
+            "description": "Professional network and careers"
+          },
+          {
+            "id": 4,
+            "name": "YouTube",
+            "url": "https://www.youtube.com/@SAGITUniversity",
+            "icon": "fab fa-youtube",
+            "color": "#FF0000",
+            "followers": "3.1K",
+            "description": "Lectures and university life"
+          },
+          {
+            "id": 5,
+            "name": "Twitter",
+            "url": "https://twitter.com/SAGIT_Uni",
+            "icon": "fab fa-twitter",
+            "color": "#1DA1F2",
+            "followers": "1.2K",
+            "description": "News and quick updates"
+          },
+          {
+            "id": 6,
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@sagit_university",
+            "icon": "fab fa-tiktok",
+            "color": "#000000",
+            "followers": "4.7K",
+            "description": "Creative content from student life"
           }
         ]
       }
@@ -268,7 +720,7 @@
       "description": "Sardival Ghobeglejiashvili's Institute of Technology - Modern education for an innovative future",
       "quickLinks": "Quick Links",
       "contact": "Contact",
-      "address": "19 Rustaveli Avenue, Tbilisi",
+      "address": "Kvemo Ponichala, 19 Rustaveli Street, Tbilisi",
       "phone": "+995 32 222 33 44",
       "email": "info@sagit.edu.ge",
       "copyright": "All rights reserved"
