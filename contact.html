@@ -54,25 +54,25 @@
 
     <section class="section">
         <div class="container">
-            <h1 class="text-center">დაგვიკავშირდით</h1>
-            <p class="text-center">გაქვთ კითხვები? დაგვიკავშირდით და SAGIT-ის გუნდი დაგეხმარებათ.</p>
+            <h1 class="text-center" data-i18n="contactPage.title">დაგვიკავშირდით</h1>
+            <p class="text-center" data-i18n="contactPage.subtitle">გაქვთ კითხვები? დაგვიკავშირდით და SAGIT-ის გუნდი დაგეხმარებათ.</p>
             
             <div class="grid" style="margin-top: 3rem;">
                 <div>
-                    <h2>საკონტაქტო ინფორმაცია</h2>
+                    <h2 data-i18n="contactPage.contactInfo">საკონტაქტო ინფორმაცია</h2>
                     
                     <div style="margin-top: 2rem;">
-                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>მისამართი:</strong><br>ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი, 0108, საქართველო</p>
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.address">მისამართი:</strong><br>ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი, 0108, საქართველო</p>
                         
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>ტელეფონი:</strong><br>+995 32 222 33 44</p>
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.phone">ტელეფონი:</strong><br>+995 32 222 33 44</p>
                         
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>ელ-ფოსტა:</strong><br>info@sagit.edu.ge</p>
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.email">ელ-ფოსტა:</strong><br>info@sagit.edu.ge</p>
                         
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>სამუშაო საათები:</strong><br>ორშაბათი - პარასკევი: 9:00 - 18:00<br>შაბათი: 10:00 - 15:00<br>კვირა: დახურულია</p>
+                        <p style="margin-top: 1.5rem;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.workingHours">სამუშაო საათები:</strong><br><span data-i18n="contactPage.workingHoursValue">ორშაბათი - პარასკევი: 9:00 - 18:00<br>შაბათი: 10:00 - 15:00<br>კვირა: დახურულია</span></p>
                     </div>
                     
                     <div style="margin-top: 2rem;">
-                        <h3>გამოგვყევით სოციალურ ქსელებში</h3>
+                        <h3 data-i18n="contactPage.followUs">გამოგვყევით სოციალურ ქსელებში</h3>
                         <div style="margin-top: 1rem; display: flex; gap: 15px;">
                             <a href="https://www.instagram.com/sagit_uni/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.facebook.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
@@ -84,42 +84,42 @@
                 </div>
                 
                 <div>
-                    <h2>მოგვწერეთ</h2>
+                    <h2 data-i18n="contactPage.writeToUs">მოგვწერეთ</h2>
                     
                     <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">სახელი და გვარი *</label>
+                            <label for="name" data-i18n="contactPage.form.name">სახელი და გვარი</label> *
                             <input type="text" id="name" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">ელ-ფოსტა *</label>
+                            <label for="email" data-i18n="contactPage.form.email">ელ-ფოსტა</label> *
                             <input type="email" id="email" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">ტელეფონის ნომერი</label>
+                            <label for="phone" data-i18n="contactPage.form.phone">ტელეფონის ნომერი</label>
                             <input type="tel" id="phone" class="form-control">
                         </div>
                         
                         <div class="form-group">
-                            <label for="subject">თემა *</label>
+                            <label for="subject" data-i18n="contactPage.form.subject">თემა</label> *
                             <select id="subject" class="form-control" required>
-                                <option value="">აირჩიეთ თემა</option>
-                                <option value="admission">მიღების შესახებ</option>
-                                <option value="programs">საგანმანათლებლო პროგრამები</option>
-                                <option value="scholarships">სტიპენდიები და ფინანსური დახმარება</option>
-                                <option value="careers">კარიერა SAGIT-ში</option>
-                                <option value="other">სხვა</option>
+                                <option value="" data-i18n="contactPage.form.selectSubject">აირჩიეთ თემა</option>
+                                <option value="admission" data-i18n="contactPage.form.admission">მიღების შესახებ</option>
+                                <option value="programs" data-i18n="contactPage.form.programs">საგანმანათლებლო პროგრამები</option>
+                                <option value="scholarships" data-i18n="contactPage.form.scholarships">სტიპენდიები და ფინანსური დახმარება</option>
+                                <option value="careers" data-i18n="contactPage.form.careers">კარიერა SAGIT-ში</option>
+                                <option value="other" data-i18n="contactPage.form.other">სხვა</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">შეტყობინება *</label>
+                            <label for="message" data-i18n="contactPage.form.message">შეტყობინება</label> *
                             <textarea id="message" class="form-control" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn" style="width: 100%;">გაგზავნა</button>
+                        <button type="submit" class="btn" style="width: 100%;" data-i18n="contactPage.form.send">გაგზავნა</button>
                     </form>
                 </div>
             </div>
@@ -128,7 +128,7 @@
 
     <section class="section" style="padding-top: 0;">
         <div class="container">
-            <h2 class="text-center">ჩვენი მდებარეობა</h2>
+            <h2 class="text-center" data-i18n="contactPage.location">ჩვენი მდებარეობა</h2>
             
             <div style="margin-top: 2rem; width: 100%; height: 450px; border-radius: 8px; overflow: hidden;">
                 <!-- Google Maps embed for Kvemo Ponichala, Rustaveli Street 19, Tbilisi -->
@@ -139,16 +139,16 @@
 
     <section class="section" style="background-color: rgba(30, 10, 10, 0.75);">
         <div class="container">
-            <h2 class="text-center">დეპარტამენტები</h2>
-            <p class="text-center">პირდაპირ დაუკავშირდით შესაბამის დეპარტამენტს თქვენი კითხვებით</p>
+            <h2 class="text-center" data-i18n="contactPage.departments">დეპარტამენტები</h2>
+            <p class="text-center" data-i18n="contactPage.departmentsSubtitle">პირდაპირ დაუკავშირდით შესაბამის დეპარტამენტს თქვენი კითხვებით</p>
             
             <div class="grid">
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
-                    <h3>მიღების დეპარტამენტი</h3>
-                    <p>დაგვიკავშირდით მიღების პროცესთან და მოთხოვნებთან დაკავშირებული კითხვებით.</p>
+                    <h3 data-i18n="contactPage.admissionsDept">მიღების დეპარტამენტი</h3>
+                    <p data-i18n="contactPage.admissionsDeptDesc">დაგვიკავშირდით მიღების პროცესთან და მოთხოვნებთან დაკავშირებული კითხვებით.</p>
                     <p><i class="fas fa-envelope"></i> admissions@sagit.edu.ge</p>
                     <p><i class="fas fa-phone"></i> +995 32 222 33 55</p>
                 </div>
@@ -157,8 +157,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
-                    <h3>აკადემიური დეპარტამენტი</h3>
-                    <p>დაგვიკავშირდით სასწავლო პროგრამებთან და კურსებთან დაკავშირებული კითხვებით.</p>
+                    <h3 data-i18n="contactPage.academicDept">აკადემიური დეპარტამენტი</h3>
+                    <p data-i18n="contactPage.academicDeptDesc">დაგვიკავშირდით სასწავლო პროგრამებთან და კურსებთან დაკავშირებული კითხვებით.</p>
                     <p><i class="fas fa-envelope"></i> academic@sagit.edu.ge</p>
                     <p><i class="fas fa-phone"></i> +995 32 222 33 66</p>
                 </div>
@@ -167,8 +167,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-coins"></i>
                     </div>
-                    <h3>ფინანსური დახმარება</h3>
-                    <p>დაგვიკავშირდით სტიპენდიებთან და ფინანსურ დახმარებასთან დაკავშირებული კითხვებით.</p>
+                    <h3 data-i18n="contactPage.financialAid">ფინანსური დახმარება</h3>
+                    <p data-i18n="contactPage.financialAidDesc">დაგვიკავშირდით სტიპენდიებთან და ფინანსურ დახმარებასთან დაკავშირებული კითხვებით.</p>
                     <p><i class="fas fa-envelope"></i> financial.aid@sagit.edu.ge</p>
                     <p><i class="fas fa-phone"></i> +995 32 222 33 77</p>
                 </div>
@@ -177,8 +177,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>პარტნიორობა და თანამშრომლობა</h3>
-                    <p>დაგვიკავშირდით ბიზნეს პარტნიორობასთან და აკადემიურ თანამშრომლობასთან დაკავშირებით.</p>
+                    <h3 data-i18n="contactPage.partnerships">პარტნიორობა და თანამშრომლობა</h3>
+                    <p data-i18n="contactPage.partnershipsDesc">დაგვიკავშირდით ბიზნეს პარტნიორობასთან და აკადემიურ თანამშრომლობასთან დაკავშირებით.</p>
                     <p><i class="fas fa-envelope"></i> partnerships@sagit.edu.ge</p>
                     <p><i class="fas fa-phone"></i> +995 32 222 33 88</p>
                 </div>
@@ -219,15 +219,15 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h4>კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
-                    <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
+                    <h4 data-i18n="footer.contact">კონტაქტი</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+995 32 222 33 44</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.email">info@sagit.edu.ge</span></p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 საქართველოს ტექნოლოგიების ინსტიტუტი. ყველა უფლება დაცულია.</p>
+                <p>&copy; 2025 <span data-i18n="university.shortName">SAGIT</span>. <span data-i18n="footer.copyright">ყველა უფლება დაცულია</span>.</p>
             </div>
         </div>
     </footer>
@@ -259,7 +259,13 @@
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                alert('მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა. ჩვენ მალე დაგიკავშირდებით.');
+                // Get current language and show appropriate success message
+                const currentLang = localStorage.getItem('language') || 'ka';
+                const translations = window.translations || {};
+                const successMessage = translations[currentLang]?.contactPage?.form?.successMessage || 
+                    'მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა. ჩვენ მალე დაგიკავშირდებით.';
+                
+                alert(successMessage);
                 contactForm.reset();
             });
         }
