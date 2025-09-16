@@ -107,38 +107,38 @@
         "members": [
           {
             "id": 1,
-            "name": "დავით გიორგაძე",
-            "position": "რექტორი",
+            "name": "სარდივალ ღობეგლეჯიაშვილი",
+            "position": "დეკანი",
             "bio": "20 წლიანი გამოცდილება ტექნოლოგიური განათლების სფეროში",
-            "image": "/assets/images/team/davit-giorgadze.jpg",
-            "email": "d.giorgadze@sagit.edu.ge",
+            "image": "/assets/images/team/sardival-ghobeglejiashvili.jpg",
+            "email": "s.ghobeglejiashvili@sagit.edu.ge",
             "expertise": ["განათლების მენეჯმენტი", "სტრატეგიული დაგეგმვა", "ინოვაციები"]
           },
           {
             "id": 2,
-            "name": "თამარ მაისურაძე",
+            "name": "ნინო კორშია",
             "position": "აკადემიური დირექტორი",
             "bio": "კომპიუტერული მეცნიერებების დოქტორი, 15 წლიანი პედაგოგიური გამოცდილება",
-            "image": "/assets/images/team/tamar-maisuradze.jpg",
-            "email": "t.maisuradze@sagit.edu.ge",
+            "image": "/assets/images/team/nino-korshia.jpg",
+            "email": "n.korshia@sagit.edu.ge",
             "expertise": ["კომპიუტერული მეცნიერება", "მონაცემთა ანალიზი", "აკადემიური კურიკულუმი"]
           },
           {
             "id": 3,
-            "name": "გიორგი კაპანაძე",
+            "name": "გივი ჩვენვართიშვილი",
             "position": "კვლევების დირექტორი",
             "bio": "ხელოვნური ინტელექტის სპეციალისტი, 12 წლიანი კვლევითი გამოცდილება",
-            "image": "/assets/images/team/giorgi-kapanadze.jpg",
-            "email": "g.kapanadze@sagit.edu.ge",
+            "image": "/assets/images/team/givi-chvenvartishvili.jpg",
+            "email": "g.chvenvartishvili@sagit.edu.ge",
             "expertise": ["ხელოვნური ინტელექტი", "მანქანური სწავლება", "კვლევა და განვითარება"]
           },
           {
             "id": 4,
-            "name": "ნინო წერეთელი",
+            "name": "სულხან კვერნაძე",
             "position": "საერთაშორისო ურთიერთობების ხელმძღვანელი",
             "bio": "საერთაშორისო ბიზნესის მაგისტრი, 10 წლიანი გამოცდილება",
-            "image": "/assets/images/team/nino-tsereteli.jpg",
-            "email": "n.tsereteli@sagit.edu.ge",
+            "image": "/assets/images/team/sulxan-kvernadze.jpg",
+            "email": "s.kvernadze@sagit.edu.ge",
             "expertise": ["საერთაშორისო პარტნიორობა", "პროექტების მენეჯმენტი", "კულტურათაშორისი კომუნიკაცია"]
           }
         ]
@@ -515,38 +515,38 @@
         "members": [
           {
             "id": 1,
-            "name": "David Giorgadze",
-            "position": "Rector",
+            "name": "Sardival Ghobeglejiasvhili",
+            "position": "Dean",
             "bio": "20 years of experience in technological education management",
-            "image": "/assets/images/team/davit-giorgadze.jpg",
-            "email": "d.giorgadze@sagit.edu.ge",
+            "image": "/assets/images/team/sardival-ghobeglejiashvili.jpg",
+            "email": "s.ghobeglejiashvili@sagit.edu.ge",
             "expertise": ["Educational Management", "Strategic Planning", "Innovation"]
           },
           {
             "id": 2,
-            "name": "Tamar Maisuradze",
+            "name": "Nino Korshia",
             "position": "Academic Director",
             "bio": "Ph.D. in Computer Science with 15 years of teaching experience",
-            "image": "/assets/images/team/tamar-maisuradze.jpg",
-            "email": "t.maisuradze@sagit.edu.ge",
+            "image": "/assets/images/team/nino-korshia.jpg",
+            "email": "n.korshia@sagit.edu.ge",
             "expertise": ["Computer Science", "Data Analysis", "Academic Curriculum"]
           },
           {
             "id": 3,
-            "name": "Giorgi Kapanadze",
+            "name": "Givi Chvenvartishvili",
             "position": "Research Director",
             "bio": "AI specialist with 12 years of research experience",
-            "image": "/assets/images/team/giorgi-kapanadze.jpg",
-            "email": "g.kapanadze@sagit.edu.ge",
+            "image": "/assets/images/team/givi-chvenvartishvili.jpg",
+            "email": "g.chvenvartishvili@sagit.edu.ge",
             "expertise": ["Artificial Intelligence", "Machine Learning", "Research & Development"]
           },
           {
             "id": 4,
-            "name": "Nino Tsereteli",
+            "name": "Sulxan Kvernadze",
             "position": "Head of International Relations",
             "bio": "Master's in International Business with 10 years of experience",
-            "image": "/assets/images/team/nino-tsereteli.jpg",
-            "email": "n.tsereteli@sagit.edu.ge",
+            "image": "/assets/images/team/sulxan-kvernadze.jpg",
+            "email": "s.kvernadze@sagit.edu.ge",
             "expertise": ["International Partnership", "Project Management", "Cross-cultural Communication"]
           }
         ]
