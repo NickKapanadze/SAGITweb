@@ -1,0 +1,282 @@
+{
+  "ge": {
+    "university": {
+      "name": "სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი",
+      "shortName": "საღუნი",
+      "slogan": "სწავლება ინოვაციის, კვლევისა და განვითარების სამსახურში"
+    },
+    "navigation": {
+      "home": "მთავარი",
+      "about": "ჩვენს შესახებ",
+      "programs": "პროგრამები",
+      "admissions": "მიღება",
+      "contact": "კონტაქტი"
+    },
+    "buttons": {
+      "readMore": "გაიგე მეტი",
+      "ourPrograms": "ჩვენი პროგრამები",
+      "fullView": "სრულად ნახვა",
+      "submit": "გაგზავნა",
+      "switchLang": "English"
+    },
+    "home": {
+      "whyUs": "რატომ საღუნი?",
+      "whyUsDesc": "აღმოაჩინეთ თუ რატომ არის საღუნი საუკეთესო არჩევანი თქვენი აკადემიური და პროფესიული ზრდისთვის",
+      "modernPrograms": "თანამედროვე სასწავლო პროგრამები",
+      "modernProgramsDesc": "ჩვენი პროგრამები შემუშავებულია ინდუსტრიის საუკეთესო პრაქტიკოსებთან ერთად, რათა მოგაწოდოთ რელევანტური და მოთხოვნადი უნარები.",
+      "research": "ინოვაციური კვლევა",
+      "researchDesc": "ჩვენი კვლევითი ცენტრები და ლაბორატორიები საშუალებას გაძლევთ ჩაერთოთ წამყვან ტექნოლოგიურ პროექტებში.",
+      "teachers": "ექსპერტი პედაგოგები",
+      "teachersDesc": "ისწავლეთ ინდუსტრიის წამყვანი პროფესიონალებისგან და აკადემიური ექსპერტებისგან, რომელთაც აქვთ მდიდარი პრაქტიკული გამოცდილება.",
+      "infoText": "საღუნი-ის გუნდი მუშაობს ახალი და საინტერესო საგანმანათლებლო პროგრამების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი საქართველოს წამყვანი ტექნოლოგიური უნივერსიტეტის შესახებ!",
+      "countdown": "ახალი პროგრამების დაწყებამდე",
+      "time": {
+        "months": "თვე",
+        "days": "დღე",
+        "hours": "საათი",
+        "minutes": "წუთი",
+        "seconds": "წამი"
+      },
+      "latestNews": "უახლესი სიახლეები",
+      "news": [
+        {
+          "title": "ახალი ტექნოლოგიური ლაბორატორია",
+          "desc": "საღუნი-ის ახალი ლაბორატორია აღჭურვილია უახლესი ტექნოლოგიებით და მზადაა სტუდენტების მისაღებად."
+        },
+        {
+          "title": "საერთაშორისო პარტნიორობა",
+          "desc": "საღუნი-მა ხელი მოაწერა თანამშრომლობის მემორანდუმს ევროპის წამყვან ტექნოლოგიურ უნივერსიტეტებთან."
+        },
+        {
+          "title": "სტიპენდიები 2025-2026 წლისთვის",
+          "desc": "შეიტყვეთ მეტი ჩვენი განახლებული სასტიპენდიო პროგრამების შესახებ მომავალი აკადემიური წლისთვის."
+        }
+      ]
+    },
+    "about": {
+      "title": "ჩვენს შესახებ",
+      "intro": {
+        "heading": "სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი",
+        "paragraph1": "სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი (საღუნი) არის ქართული საგანმანათლებლო დაწესებულება, რომელიც დაფუძნდა 2023 წელს ტექნოლოგიების, ინჟინერიისა და ინოვაციების სფეროში ხარისხიანი განათლების მიწოდების მიზნით.",
+        "paragraph2": "ჩვენი მისიაა მოვამზადოთ მომავლის ლიდერები, რომლებიც შეძლებენ ციფრულ სამყაროში ნავიგაციას და ტექნოლოგიური გამოწვევების გადალახვას. ჩვენ გთავაზობთ თანამედროვე სასწავლო პროგრამებს, რომლებიც შემუშავებულია ინდუსტრიის საჭიროებების გათვალისწინებით.",
+        "paragraph3": "საღუნი-ის აკადემიური გუნდი შედგება ინდუსტრიის გამოცდილი პროფესიონალებისა და აკადემიური ექსპერტებისგან, რომლებიც მზად არიან მოგაწოდონ სიღრმისეული ცოდნა და პრაქტიკული უნარები."
+      },
+      "values": {
+        "title": "ჩვენი ღირებულებები",
+        "innovation": {
+          "title": "ინოვაცია",
+          "desc": "ჩვენ ვაფასებთ ახალი იდეების ძიებას და ვახალისებთ კრეატიულ აზროვნებას ყველა ჩვენს საქმიანობაში."
+        },
+        "collaboration": {
+          "title": "თანამშრომლობა",
+          "desc": "გვჯერა, რომ საუკეთესო შედეგები მიიღწევა ერთობლივი ძალისხმევით, ინდუსტრიასთან და საზოგადოებასთან პარტნიორობით."
+        },
+        "globalPerspective": {
+          "title": "გლობალური პერსპექტივა",
+          "desc": "ჩვენი სტუდენტები სწავლობენ გლობალურ კონტექსტში, საერთაშორისო სტანდარტების გათვალისწინებით."
+        },
+        "quality": {
+          "title": "ხარისხი",
+          "desc": "ვალდებულნი ვართ შევინარჩუნოთ მაღალი სტანდარტები განათლებაში, კვლევასა და სერვისებში."
+        }
+      },
+      "history": {
+        "title": "ჩვენი ისტორია",
+        "timeline": [
+          {
+            "year": "2023",
+            "event": "საღუნი-ის დაფუძნება ქართველი ტექნოლოგების, მეცნიერებისა და განათლების ექსპერტების მიერ."
+          },
+          {
+            "year": "2024",
+            "event": "პირველი საერთაშორისო პარტნიორობების დამყარება ევროპისა და ამერიკის წამყვან უნივერსიტეტებთან."
+          },
+          {
+            "year": "2025",
+            "event": "თანამედროვე კამპუსის მშენებლობის დასრულება და პირველი სტუდენტების მიღება."
+          },
+          {
+            "year": "2026",
+            "event": "ახალი კვლევითი ცენტრების გახსნა ხელოვნური ინტელექტისა და კიბერუსაფრთხოების მიმართულებით."
+          }
+        ]
+      },
+      "team": {
+        "title": "ჩვენი გუნდი",
+        "subtitle": "გაიცანით საღუნი-ის ლიდერები და აკადემიური პერსონალი",
+        "members": [
+          {
+            "name": "დავით გიორგაძე",
+            "position": "რექტორი"
+          },
+          {
+            "name": "თამარ მაისურაძე",
+            "position": "აკადემიური დირექტორი"
+          },
+          {
+            "name": "გიორგი კაპანაძე",
+            "position": "კვლევების დირექტორი"
+          },
+          {
+            "name": "ნინო წერეთელი",
+            "position": "საერთაშორისო ურთიერთობების ხელმძღვანელი"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "description": "სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი - თანამედროვე განათლება ინოვაციური მომავლისთვის",
+      "quickLinks": "სწრაფი ბმულები",
+      "contact": "კონტაქტი",
+      "address": "რუსთაველის გამზირი 19, თბილისი",
+      "phone": "+995 32 222 33 44",
+      "email": "info@sagit.edu.ge",
+      "copyright": "ყველა უფლება დაცულია"
+    },
+    "error": {
+      "title": "მანდ რა გინდა ეს... ?",
+      "message": "გვერდი, რომელსაც ეძებთ, არ არსებობს.",
+      "backHome": "მთავარ გვერდზე დაბრუნება"
+    }
+  },
+  "en": {
+    "university": {
+      "name": "Sardival Ghobeglejiashvili's Institute of Technology",
+      "shortName": "SAGIT",
+      "slogan": "Education in service of innovation, research and development"
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "programs": "Programs",
+      "admissions": "Admissions",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "readMore": "Learn More",
+      "ourPrograms": "Our Programs",
+      "fullView": "View Full",
+      "submit": "Submit",
+      "switchLang": "ქართული"
+    },
+    "home": {
+      "whyUs": "Why SAGIT?",
+      "whyUsDesc": "Discover why SAGIT is the best choice for your academic and professional growth",
+      "modernPrograms": "Modern Educational Programs",
+      "modernProgramsDesc": "Our programs are developed with industry practitioners to provide you with relevant and in-demand skills.",
+      "research": "Innovative Research",
+      "researchDesc": "Our research centers and laboratories allow you to engage in leading technological projects.",
+      "teachers": "Expert Faculty",
+      "teachersDesc": "Learn from industry-leading professionals and academic experts with rich practical experience.",
+      "infoText": "The SAGIT team is working on creating new and exciting educational programs that will soon be available. Stay with us and learn more about Georgia's leading technological university!",
+      "countdown": "Until New Programs Begin",
+      "time": {
+        "months": "Months",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+      },
+      "latestNews": "Latest News",
+      "news": [
+        {
+          "title": "New Technology Laboratory",
+          "desc": "SAGIT's new laboratory is equipped with the latest technologies and is ready to welcome students."
+        },
+        {
+          "title": "International Partnership",
+          "desc": "SAGIT has signed a memorandum of cooperation with leading European technological universities."
+        },
+        {
+          "title": "Scholarships for 2025-2026",
+          "desc": "Learn more about our updated scholarship programs for the upcoming academic year."
+        }
+      ]
+    },
+    "about": {
+      "title": "About Us",
+      "intro": {
+        "heading": "Sardival Ghobeglejiashvili's Institute of Technology",
+        "paragraph1": "Sardival Ghobeglejiashvili's Institute of Technology (SAGIT) is a Georgian educational institution founded in 2023 with the aim of providing quality education in the fields of technology, engineering, and innovation.",
+        "paragraph2": "Our mission is to prepare future leaders who can navigate the digital world and overcome technological challenges. We offer modern educational programs developed with industry needs in mind.",
+        "paragraph3": "The SAGIT academic team consists of experienced industry professionals and academic experts who are ready to provide you with in-depth knowledge and practical skills."
+      },
+      "values": {
+        "title": "Our Values",
+        "innovation": {
+          "title": "Innovation",
+          "desc": "We value the pursuit of new ideas and encourage creative thinking in all our activities."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "desc": "We believe that the best results are achieved through joint efforts, partnerships with industry and society."
+        },
+        "globalPerspective": {
+          "title": "Global Perspective",
+          "desc": "Our students learn in a global context, taking into account international standards."
+        },
+        "quality": {
+          "title": "Quality",
+          "desc": "We are committed to maintaining high standards in education, research, and services."
+        }
+      },
+      "history": {
+        "title": "Our History",
+        "timeline": [
+          {
+            "year": "2023",
+            "event": "Founding of SAGIT by Georgian technologists, scientists, and education experts."
+          },
+          {
+            "year": "2024",
+            "event": "Establishment of the first international partnerships with leading universities in Europe and America."
+          },
+          {
+            "year": "2025",
+            "event": "Completion of the modern campus construction and admission of the first students."
+          },
+          {
+            "year": "2026",
+            "event": "Opening of new research centers in artificial intelligence and cybersecurity."
+          }
+        ]
+      },
+      "team": {
+        "title": "Our Team",
+        "subtitle": "Meet SAGIT's leaders and academic staff",
+        "members": [
+          {
+            "name": "David Giorgadze",
+            "position": "Rector"
+          },
+          {
+            "name": "Tamar Maisuradze",
+            "position": "Academic Director"
+          },
+          {
+            "name": "Giorgi Kapanadze",
+            "position": "Research Director"
+          },
+          {
+            "name": "Nino Tsereteli",
+            "position": "Head of International Relations"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "description": "Sardival Ghobeglejiashvili's Institute of Technology - Modern education for an innovative future",
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "address": "19 Rustaveli Avenue, Tbilisi",
+      "phone": "+995 32 222 33 44",
+      "email": "info@sagit.edu.ge",
+      "copyright": "All rights reserved"
+    },
+    "error": {
+      "title": "Which dev should we fire?",
+      "message": "Oops! Someone clearly didn't do their job right. The page you're looking for has vanished into the void.",
+      "backHome": "Back to Safety"
+    }
+  }
+}

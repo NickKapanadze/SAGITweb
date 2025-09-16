@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="/assets/style/404.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/assets/js/language.js" defer></script>
 </head>
 <body>
     <header class="main-header">
@@ -23,14 +24,15 @@
             </span>
         </button>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link">მთავარი</a>
-            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link">პროგრამები</a>
-            <a href="admissions.html" class="nav-link">მიღება</a>
-            <a href="contact.html" class="nav-link">კონტაქტი</a>
+            <a href="index.html" class="nav-link" data-i18n="navigation.home">მთავარი</a>
+            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
+            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
+            <a href="contact.html" class="nav-link" data-i18n="navigation.contact">კონტაქტი</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
+            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
+            <a href="https://www.instagram.com/sagit_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
                   <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
@@ -42,8 +44,11 @@
 
     <div class="error-container">
         <div class="error-code">404</div>
-        <div class="error-message">მანდ რა გინდა ეს... ?<br>გვერდი, რომელსაც ეძებთ, არ არსებობს.</div>
-        <a href="/" class="btn">მთავარ გვერდზე დაბრუნება</a>
+        <div class="error-message">
+            <h2 data-i18n="error.title">მანდ რა გინდა ეს... ?</h2>
+            <p data-i18n="error.message">გვერდი, რომელსაც ეძებთ, არ არსებობს.</p>
+        </div>
+        <a href="/" class="btn" data-i18n="error.backHome">მთავარ გვერდზე დაბრუნება</a>
     </div>
     <div style="margin:32px; text-align:center;">
         <img src="/assets/images/hqdefault.jpg" alt="404 Image" style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 2px 16px rgba(0,0,0,0.5); opacity:0.92;" />

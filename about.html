@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/assets/js/language.js" defer></script>
 </head>
 <body>  
     <header class="main-header">
@@ -23,14 +24,15 @@
             </span>
         </button>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link">მთავარი</a>
-            <a href="about.html" class="nav-link active">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link">პროგრამები</a>
-            <a href="admissions.html" class="nav-link">მიღება</a>
-            <a href="contact.html" class="nav-link">კონტაქტი</a>
+            <a href="index.html" class="nav-link" data-i18n="navigation.home">მთავარი</a>
+            <a href="about.html" class="nav-link active" data-i18n="navigation.about">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
+            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
+            <a href="contact.html" class="nav-link" data-i18n="navigation.contact">კონტაქტი</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
+            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
+            <a href="https://www.instagram.com/sagit_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
                   <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
@@ -52,19 +54,19 @@
 
     <section class="section about-section">
         <div class="container">
-            <h1 class="text-center">ჩვენს შესახებ</h1>
+            <h1 class="text-center" data-i18n="about.title">ჩვენს შესახებ</h1>
             
             <div class="about-content">
                 <div class="about-image">
                     <img src="/assets/images/banner1.png" alt="SAGIT Campus">
                 </div>
                 <div class="about-text">
-                    <h2>საქართველოს ტექნოლოგიების ინსტიტუტი</h2>
-                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი (SAGIT) არის ქართული საგანმანათლებლო დაწესებულება, რომელიც დაფუძნდა 2023 წელს ტექნოლოგიების, ინჟინერიისა და ინოვაციების სფეროში ხარისხიანი განათლების მიწოდების მიზნით.</p>
+                    <h2 data-i18n="about.intro.heading">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</h2>
+                    <p data-i18n="about.intro.paragraph1">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი (საღუნი) არის ქართული საგანმანათლებლო დაწესებულება, რომელიც დაფუძნდა 2023 წელს ტექნოლოგიების, ინჟინერიისა და ინოვაციების სფეროში ხარისხიანი განათლების მიწოდების მიზნით.</p>
                     
-                    <p>ჩვენი მისიაა მოვამზადოთ მომავლის ლიდერები, რომლებიც შეძლებენ ციფრულ სამყაროში ნავიგაციას და ტექნოლოგიური გამოწვევების გადალახვას. ჩვენ გთავაზობთ თანამედროვე სასწავლო პროგრამებს, რომლებიც შემუშავებულია ინდუსტრიის საჭიროებების გათვალისწინებით.</p>
+                    <p data-i18n="about.intro.paragraph2">ჩვენი მისიაა მოვამზადოთ მომავლის ლიდერები, რომლებიც შეძლებენ ციფრულ სამყაროში ნავიგაციას და ტექნოლოგიური გამოწვევების გადალახვას. ჩვენ გთავაზობთ თანამედროვე სასწავლო პროგრამებს, რომლებიც შემუშავებულია ინდუსტრიის საჭიროებების გათვალისწინებით.</p>
                     
-                    <p>SAGIT-ის აკადემიური გუნდი შედგება ინდუსტრიის გამოცდილი პროფესიონალებისა და აკადემიური ექსპერტებისგან, რომლებიც მზად არიან მოგაწოდონ სიღრმისეული ცოდნა და პრაქტიკული უნარები.</p>
+                    <p data-i18n="about.intro.paragraph3">საღუნი-ის აკადემიური გუნდი შედგება ინდუსტრიის გამოცდილი პროფესიონალებისა და აკადემიური ექსპერტებისგან, რომლებიც მზად არიან მოგაწოდონ სიღრმისეული ცოდნა და პრაქტიკული უნარები.</p>
                 </div>
             </div>
         </div>
@@ -72,39 +74,39 @@
 
     <section class="section" style="background-color: rgba(30, 10, 10, 0.75);">
         <div class="container">
-            <h2 class="text-center">ჩვენი ღირებულებები</h2>
+            <h2 class="text-center" data-i18n="about.values.title">ჩვენი ღირებულებები</h2>
             
             <div class="grid">
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3>ინოვაცია</h3>
-                    <p>ჩვენ ვაფასებთ ახალი იდეების ძიებას და ვახალისებთ კრეატიულ აზროვნებას ყველა ჩვენს საქმიანობაში.</p>
+                    <h3 data-i18n="about.values.innovation.title">ინოვაცია</h3>
+                    <p data-i18n="about.values.innovation.desc">ჩვენ ვაფასებთ ახალი იდეების ძიებას და ვახალისებთ კრეატიულ აზროვნებას ყველა ჩვენს საქმიანობაში.</p>
                 </div>
                 
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>თანამშრომლობა</h3>
-                    <p>გვჯერა, რომ საუკეთესო შედეგები მიიღწევა ერთობლივი ძალისხმევით, ინდუსტრიასთან და საზოგადოებასთან პარტნიორობით.</p>
+                    <h3 data-i18n="about.values.collaboration.title">თანამშრომლობა</h3>
+                    <p data-i18n="about.values.collaboration.desc">გვჯერა, რომ საუკეთესო შედეგები მიიღწევა ერთობლივი ძალისხმევით, ინდუსტრიასთან და საზოგადოებასთან პარტნიორობით.</p>
                 </div>
                 
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3>გლობალური პერსპექტივა</h3>
-                    <p>ჩვენი სტუდენტები სწავლობენ გლობალურ კონტექსტში, საერთაშორისო სტანდარტების გათვალისწინებით.</p>
+                    <h3 data-i18n="about.values.globalPerspective.title">გლობალური პერსპექტივა</h3>
+                    <p data-i18n="about.values.globalPerspective.desc">ჩვენი სტუდენტები სწავლობენ გლობალურ კონტექსტში, საერთაშორისო სტანდარტების გათვალისწინებით.</p>
                 </div>
                 
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-medal"></i>
                     </div>
-                    <h3>ხარისხი</h3>
-                    <p>ვალდებულნი ვართ შევინარჩუნოთ მაღალი სტანდარტები განათლებაში, კვლევასა და სერვისებში.</p>
+                    <h3 data-i18n="about.values.quality.title">ხარისხი</h3>
+                    <p data-i18n="about.values.quality.desc">ვალდებულნი ვართ შევინარჩუნოთ მაღალი სტანდარტები განათლებაში, კვლევასა და სერვისებში.</p>
                 </div>
             </div>
         </div>
@@ -112,34 +114,34 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="text-center">ჩვენი ისტორია</h2>
+            <h2 class="text-center" data-i18n="about.history.title">ჩვენი ისტორია</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>2023</h3>
-                        <p>SAGIT-ის დაფუძნება ქართველი ტექნოლოგების, მეცნიერებისა და განათლების ექსპერტების მიერ.</p>
+                        <p data-i18n="about.history.timeline.0.event">საღუნი-ის დაფუძნება ქართველი ტექნოლოგების, მეცნიერებისა და განათლების ექსპერტების მიერ.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>2024</h3>
-                        <p>პირველი საერთაშორისო პარტნიორობების დამყარება ევროპისა და ამერიკის წამყვან უნივერსიტეტებთან.</p>
+                        <p data-i18n="about.history.timeline.1.event">პირველი საერთაშორისო პარტნიორობების დამყარება ევროპისა და ამერიკის წამყვან უნივერსიტეტებთან.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>2025</h3>
-                        <p>თანამედროვე კამპუსის მშენებლობის დასრულება და პირველი სტუდენტების მიღება.</p>
+                        <p data-i18n="about.history.timeline.2.event">თანამედროვე კამპუსის მშენებლობის დასრულება და პირველი სტუდენტების მიღება.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>2026</h3>
-                        <p>ახალი კვლევითი ცენტრების გახსნა ხელოვნური ინტელექტისა და კიბერუსაფრთხოების მიმართულებით.</p>
+                        <p data-i18n="about.history.timeline.3.event">ახალი კვლევითი ცენტრების გახსნა ხელოვნური ინტელექტისა და კიბერუსაფრთხოების მიმართულებით.</p>
                     </div>
                 </div>
             </div>
@@ -148,32 +150,32 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="text-center">ჩვენი გუნდი</h2>
-            <p class="text-center">გაიცანით SAGIT-ის ლიდერები და აკადემიური პერსონალი</p>
+            <h2 class="text-center" data-i18n="about.team.title">ჩვენი გუნდი</h2>
+            <p class="text-center" data-i18n="about.team.subtitle">გაიცანით საღუნი-ის ლიდერები და აკადემიური პერსონალი</p>
             
             <div class="faculty-grid">
                 <div class="faculty-card">
                     <img src="/assets/images/bg.png" alt="Faculty Member" class="faculty-image">
-                    <h3>დავით გიორგაძე</h3>
-                    <p>რექტორი</p>
+                    <h3 data-i18n="about.team.members.0.name">დავით გიორგაძე</h3>
+                    <p data-i18n="about.team.members.0.position">რექტორი</p>
                 </div>
                 
                 <div class="faculty-card">
                     <img src="/assets/images/bg.png" alt="Faculty Member" class="faculty-image">
-                    <h3>თამარ მაისურაძე</h3>
-                    <p>აკადემიური დირექტორი</p>
+                    <h3 data-i18n="about.team.members.1.name">თამარ მაისურაძე</h3>
+                    <p data-i18n="about.team.members.1.position">აკადემიური დირექტორი</p>
                 </div>
                 
                 <div class="faculty-card">
                     <img src="/assets/images/bg.png" alt="Faculty Member" class="faculty-image">
-                    <h3>გიორგი კაპანაძე</h3>
-                    <p>კვლევების დირექტორი</p>
+                    <h3 data-i18n="about.team.members.2.name">გიორგი კაპანაძე</h3>
+                    <p data-i18n="about.team.members.2.position">კვლევების დირექტორი</p>
                 </div>
                 
                 <div class="faculty-card">
                     <img src="/assets/images/bg.png" alt="Faculty Member" class="faculty-image">
-                    <h3>ნინო წერეთელი</h3>
-                    <p>საერთაშორისო ურთიერთობების ხელმძღვანელი</p>
+                    <h3 data-i18n="about.team.members.3.name">ნინო წერეთელი</h3>
+                    <p data-i18n="about.team.members.3.position">საერთაშორისო ურთიერთობების ხელმძღვანელი</p>
                 </div>
             </div>
         </div>
@@ -184,35 +186,35 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>SAGIT</h4>
-                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
+                    <p data-i18n="footer.description">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
                     <div class="footer-social">
-                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/sagit_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>სწრაფი ბმულები</h4>
+                    <h4 data-i18n="footer.quickLinks">სწრაფი ბმულები</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">მთავარი</a></li>
-                        <li><a href="about.html">ჩვენს შესახებ</a></li>
-                        <li><a href="programs.html">პროგრამები</a></li>
-                        <li><a href="admissions.html">მიღება</a></li>
-                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="index.html" data-i18n="navigation.home">მთავარი</a></li>
+                        <li><a href="about.html" data-i18n="navigation.about">ჩვენს შესახებ</a></li>
+                        <li><a href="programs.html" data-i18n="navigation.programs">პროგრამები</a></li>
+                        <li><a href="admissions.html" data-i18n="navigation.admissions">მიღება</a></li>
+                        <li><a href="contact.html" data-i18n="navigation.contact">კონტაქტი</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> რუსთაველის გამზირი 19, თბილისი</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
-                    <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
+                    <h4 data-i18n="footer.contact">კონტაქტი</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">რუსთაველის გამზირი 19, თბილისი</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+995 32 222 33 44</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.email">info@sagit.edu.ge</span></p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 საქართველოს ტექნოლოგიების ინსტიტუტი. ყველა უფლება დაცულია.</p>
+                <p>&copy; 2025 <span data-i18n="university.name">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>. <span data-i18n="footer.copyright">ყველა უფლება დაცულია</span>.</p>
             </div>
         </div>
     </footer>

@@ -233,6 +233,23 @@ a:hover {
     filter: drop-shadow(0 0 4px rgba(230, 183, 108, 0.5));
 }
 
+/* Language toggle button */
+.lang-toggle {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.lang-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
 /* Mobile menu */
 .mobile-menu-toggle {
     display: none;

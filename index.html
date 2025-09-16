@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGIT - საქართველოს ტექნოლოგიების ინსტიტუტი</title>
+    <title>SAGIT - სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</title>
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/assets/js/language.js" defer></script>
 </head>
 <body>  
     <header class="main-header">
@@ -23,14 +24,15 @@
             </span>
         </button>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link active">მთავარი</a>
-            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link">პროგრამები</a>
-            <a href="admissions.html" class="nav-link">მიღება</a>
-            <a href="contact.html" class="nav-link">კონტაქტი</a>
+            <a href="index.html" class="nav-link active" data-i18n="navigation.home">მთავარი</a>
+            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
+            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
+            <a href="contact.html" class="nav-link" data-i18n="navigation.contact">კონტაქტი</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
+            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
+            <a href="https://www.instagram.com/sagit_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
                   <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
@@ -48,79 +50,79 @@
 
     <section class="hero" style="background-image: url('/assets/images/banner1.png');">
         <div class="hero-content">
-            <h1>საქართველოს ტექნოლოგიების ინსტიტუტი</h1>
-            <p>სწავლება ინოვაციის, კვლევისა და განვითარების სამსახურში</p>
+            <h1 data-i18n="university.name">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</h1>
+            <p data-i18n="university.slogan">სწავლება ინოვაციის, კვლევისა და განვითარების სამსახურში</p>
             <div>
-                <a href="programs.html" class="btn">ჩვენი პროგრამები</a>
-                <a href="about.html" class="btn btn-outline">გაიგე მეტი</a>
+                <a href="programs.html" class="btn" data-i18n="buttons.ourPrograms">ჩვენი პროგრამები</a>
+                <a href="about.html" class="btn btn-outline" data-i18n="buttons.readMore">გაიგე მეტი</a>
             </div>
         </div>
     </section>
 
     <section class="section features">
         <div class="container">
-            <h2 class="text-center">რატომ SAGIT?</h2>
-            <p class="text-center">აღმოაჩინეთ თუ რატომ არის SAGIT საუკეთესო არჩევანი თქვენი აკადემიური და პროფესიული ზრდისთვის</p>
+            <h2 class="text-center" data-i18n="home.whyUs">რატომ საღუნი?</h2>
+            <p class="text-center" data-i18n="home.whyUsDesc">აღმოაჩინეთ თუ რატომ არის საღუნი საუკეთესო არჩევანი თქვენი აკადემიური და პროფესიული ზრდისთვის</p>
             
             <div class="grid">
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>თანამედროვე სასწავლო პროგრამები</h3>
-                    <p>ჩვენი პროგრამები შემუშავებულია ინდუსტრიის საუკეთესო პრაქტიკოსებთან ერთად, რათა მოგაწოდოთ რელევანტური და მოთხოვნადი უნარები.</p>
+                    <h3 data-i18n="home.modernPrograms">თანამედროვე სასწავლო პროგრამები</h3>
+                    <p data-i18n="home.modernProgramsDesc">ჩვენი პროგრამები შემუშავებულია ინდუსტრიის საუკეთესო პრაქტიკოსებთან ერთად, რათა მოგაწოდოთ რელევანტური და მოთხოვნადი უნარები.</p>
                 </div>
                 
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-flask"></i>
                     </div>
-                    <h3>ინოვაციური კვლევა</h3>
-                    <p>ჩვენი კვლევითი ცენტრები და ლაბორატორიები საშუალებას გაძლევთ ჩაერთოთ წამყვან ტექნოლოგიურ პროექტებში.</p>
+                    <h3 data-i18n="home.research">ინოვაციური კვლევა</h3>
+                    <p data-i18n="home.researchDesc">ჩვენი კვლევითი ცენტრები და ლაბორატორიები საშუალებას გაძლევთ ჩაერთოთ წამყვან ტექნოლოგიურ პროექტებში.</p>
                 </div>
                 
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>ექსპერტი პედაგოგები</h3>
-                    <p>ისწავლეთ ინდუსტრიის წამყვანი პროფესიონალებისგან და აკადემიური ექსპერტებისგან, რომელთაც აქვთ მდიდარი პრაქტიკული გამოცდილება.</p>
+                    <h3 data-i18n="home.teachers">ექსპერტი პედაგოგები</h3>
+                    <p data-i18n="home.teachersDesc">ისწავლეთ ინდუსტრიის წამყვანი პროფესიონალებისგან და აკადემიური ექსპერტებისგან, რომელთაც აქვთ მდიდარი პრაქტიკული გამოცდილება.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="info-text">
-        <p>SAGIT-ის გუნდი მუშაობს ახალი და საინტერესო საგანმანათლებლო პროგრამების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი საქართველოს წამყვანი ტექნოლოგიური უნივერსიტეტის შესახებ!</p>
+        <p data-i18n="home.infoText">საღუნი-ის გუნდი მუშაობს ახალი და საინტერესო საგანმანათლებლო პროგრამების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი საქართველოს წამყვანი ტექნოლოგიური უნივერსიტეტის შესახებ!</p>
     </div>
 
     <section class="section">
         <div class="container">
-            <h2 class="text-center">ახალი პროგრამების დაწყებამდე</h2>
+            <h2 class="text-center" data-i18n="home.countdown">ახალი პროგრამების დაწყებამდე</h2>
             <div class="countdown">
                 <div class="time-box">
                     <h3 id="months">00</h3>
-                    <p>თვე</p>
+                    <p data-i18n="home.time.months">თვე</p>
                     <progress id="months-progress" value="0" max="12"></progress>
                 </div>
                 <div class="time-box">
                     <h3 id="days">00</h3>
-                    <p>დღე</p>
+                    <p data-i18n="home.time.days">დღე</p>
                     <progress id="days-progress" value="0" max="30"></progress>
                 </div>
                 <div class="time-box">
                     <h3 id="hours">00</h3>
-                    <p>საათი</p>
+                    <p data-i18n="home.time.hours">საათი</p>
                     <progress id="hours-progress" value="0" max="24"></progress>
                 </div>
                 <div class="time-box">
                     <h3 id="minutes">00</h3>
-                    <p>წუთი</p>
+                    <p data-i18n="home.time.minutes">წუთი</p>
                     <progress id="minutes-progress" value="0" max="60"></progress>
                 </div>
                 <div class="time-box">
                     <h3 id="seconds">00</h3>
-                    <p>წამი</p>
+                    <p data-i18n="home.time.seconds">წამი</p>
                     <progress id="seconds-progress" value="0" max="60"></progress>
                 </div>
             </div>
@@ -129,32 +131,32 @@
     
     <section class="section">
         <div class="container">
-            <h2 class="text-center">უახლესი სიახლეები</h2>
+            <h2 class="text-center" data-i18n="home.latestNews">უახლესი სიახლეები</h2>
             <div class="grid">
                 <div class="card">
                     <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
                     <div class="card-content">
-                        <h3 class="card-title">ახალი ტექნოლოგიური ლაბორატორია</h3>
-                        <p>SAGIT-ის ახალი ლაბორატორია აღჭურვილია უახლესი ტექნოლოგიებით და მზადაა სტუდენტების მისაღებად.</p>
-                        <a href="#" class="btn">სრულად ნახვა</a>
+                        <h3 class="card-title" data-i18n="home.news.0.title">ახალი ტექნოლოგიური ლაბორატორია</h3>
+                        <p data-i18n="home.news.0.desc">საღუნი-ის ახალი ლაბორატორია აღჭურვილია უახლესი ტექნოლოგიებით და მზადაა სტუდენტების მისაღებად.</p>
+                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
                     </div>
                 </div>
                 
                 <div class="card">
                     <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
                     <div class="card-content">
-                        <h3 class="card-title">საერთაშორისო პარტნიორობა</h3>
-                        <p>SAGIT-მა ხელი მოაწერა თანამშრომლობის მემორანდუმს ევროპის წამყვან ტექნოლოგიურ უნივერსიტეტებთან.</p>
-                        <a href="#" class="btn">სრულად ნახვა</a>
+                        <h3 class="card-title" data-i18n="home.news.1.title">საერთაშორისო პარტნიორობა</h3>
+                        <p data-i18n="home.news.1.desc">საღუნი-მა ხელი მოაწერა თანამშრომლობის მემორანდუმს ევროპის წამყვან ტექნოლოგიურ უნივერსიტეტებთან.</p>
+                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
                     </div>
                 </div>
                 
                 <div class="card">
                     <img src="/assets/images/banner1.png" alt="News Image" class="card-img">
                     <div class="card-content">
-                        <h3 class="card-title">სტიპენდიები 2025-2026 წლისთვის</h3>
-                        <p>შეიტყვეთ მეტი ჩვენი განახლებული სასტიპენდიო პროგრამების შესახებ მომავალი აკადემიური წლისთვის.</p>
-                        <a href="#" class="btn">სრულად ნახვა</a>
+                        <h3 class="card-title" data-i18n="home.news.2.title">სტიპენდიები 2025-2026 წლისთვის</h3>
+                        <p data-i18n="home.news.2.desc">შეიტყვეთ მეტი ჩვენი განახლებული სასტიპენდიო პროგრამების შესახებ მომავალი აკადემიური წლისთვის.</p>
+                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
                     </div>
                 </div>
             </div>
@@ -166,35 +168,35 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>SAGIT</h4>
-                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
+                    <p data-i18n="footer.description">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
                     <div class="footer-social">
-                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/sagit_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>სწრაფი ბმულები</h4>
+                    <h4 data-i18n="footer.quickLinks">სწრაფი ბმულები</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">მთავარი</a></li>
-                        <li><a href="about.html">ჩვენს შესახებ</a></li>
-                        <li><a href="programs.html">პროგრამები</a></li>
-                        <li><a href="admissions.html">მიღება</a></li>
-                        <li><a href="contact.html">კონტაქტი</a></li>
+                        <li><a href="index.html" data-i18n="navigation.home">მთავარი</a></li>
+                        <li><a href="about.html" data-i18n="navigation.about">ჩვენს შესახებ</a></li>
+                        <li><a href="programs.html" data-i18n="navigation.programs">პროგრამები</a></li>
+                        <li><a href="admissions.html" data-i18n="navigation.admissions">მიღება</a></li>
+                        <li><a href="contact.html" data-i18n="navigation.contact">კონტაქტი</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> რუსთაველის გამზირი 19, თბილისი</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
-                    <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
+                    <h4 data-i18n="footer.contact">კონტაქტი</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">რუსთაველის გამზირი 19, თბილისი</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+995 32 222 33 44</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.email">info@sagit.edu.ge</span></p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 საქართველოს ტექნოლოგიების ინსტიტუტი. ყველა უფლება დაცულია.</p>
+                <p>&copy; 2025 <span data-i18n="university.name">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>. <span data-i18n="footer.copyright">ყველა უფლება დაცულია</span>.</p>
             </div>
         </div>
     </footer>
