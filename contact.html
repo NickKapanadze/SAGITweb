@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <link rel="stylesheet" href="/assets/style/modern.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/assets/js/language.js" defer></script>
 </head>
 <body>  
     <header class="main-header">
@@ -23,13 +24,14 @@
             </span>
         </button>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link">მთავარი</a>
-            <a href="about.html" class="nav-link">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link">პროგრამები</a>
-            <a href="admissions.html" class="nav-link">მიღება</a>
-            <a href="contact.html" class="nav-link active">კონტაქტი</a>
+            <a href="index.html" class="nav-link" data-i18n="navigation.home">მთავარი</a>
+            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
+            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
+            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
+            <a href="contact.html" class="nav-link active" data-i18n="navigation.contact">კონტაქტი</a>
         </nav>
         <div class="social-icons">
+            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
             <a href="https://www.instagram.com/sagit_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
@@ -60,7 +62,7 @@
                     <h2>საკონტაქტო ინფორმაცია</h2>
                     
                     <div style="margin-top: 2rem;">
-                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>მისამართი:</strong><br>რუსთაველის გამზირი 19, თბილისი, 0108, საქართველო</p>
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>მისამართი:</strong><br>ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი, 0108, საქართველო</p>
                         
                         <p style="margin-top: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> <strong>ტელეფონი:</strong><br>+995 32 222 33 44</p>
                         
@@ -129,8 +131,8 @@
             <h2 class="text-center">ჩვენი მდებარეობა</h2>
             
             <div style="margin-top: 2rem; width: 100%; height: 450px; border-radius: 8px; overflow: hidden;">
-                <!-- Replace with an actual Google Maps embed code for your location -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.1284001196424!2d44.7963893!3d41.7018888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cdd1af7ece7%3A0xf2732bd530018f6!2sShota%20Rustaveli%20Avenue%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1663000000000!5m2!1sen!2sge" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Google Maps embed for Kvemo Ponichala, Rustaveli Street 19, Tbilisi -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.5!2d44.816!3d41.698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447354c9b9c5e5%3A0x7e9c4b5f6d8a1234!2sRustaveli%20St%2019%2C%20Kvemo%20Ponichala%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1726492800000!5m2!1sen!2sge" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -218,7 +220,7 @@
                 
                 <div class="footer-section">
                     <h4>კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> რუსთაველის გამზირი 19, თბილისი</p>
+                    <p><i class="fas fa-map-marker-alt"></i> ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი</p>
                     <p><i class="fas fa-phone"></i> +995 32 222 33 44</p>
                     <p><i class="fas fa-envelope"></i> info@sagit.edu.ge</p>
                 </div>
