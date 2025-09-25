@@ -40,16 +40,16 @@
       "latestNews": "უახლესი სიახლეები",
       "news": [
         {
-          "title": "ახალი ტექნოლოგიური ლაბორატორია",
-          "desc": "საღუნი-ის ახალი ლაბორატორია აღჭურვილია უახლესი ტექნოლოგიებით და მზადაა სტუდენტების მისაღებად."
+          "title": "ჯარში მიყავხარ?",
+          "desc": "საღუნის სტუდენტებს შეუძლიათ მიიღონ სამხედრო სამსახურის გადავადების უსასრულო შესაძლებლობა. ჩვენ იმდენს შეგტენით რამდენიც საჭიროა."
         },
         {
-          "title": "საერთაშორისო პარტნიორობა",
-          "desc": "საღუნი-მა ხელი მოაწერა თანამშრომლობის მემორანდუმს ევროპის წამყვან ტექნოლოგიურ უნივერსიტეტებთან."
+          "title": "გათხოვება არ გინდა?",
+          "desc": "გახდით საღუნის სტუდენტი და აარიდეთ მშობლებს ლიმუზინის და ქორწილის ვალი."
         },
         {
-          "title": "სტიპენდიები 2025-2026 წლისთვის",
-          "desc": "შეიტყვეთ მეტი ჩვენი განახლებული სასტიპენდიო პროგრამების შესახებ მომავალი აკადემიური წლისთვის."
+          "title": "ბირჟა მოგბეზრდა?",
+          "desc": "საღუნის კამპუსი ბირჯაობისთვის საუკეთესოა. ჩვენი კეთილმოწყობილი გარემო და 'სემიჩკაკრეფია' რობოტები თქვენი პახაობის გამოციდილებას სანუკვარს გახდის."
         }
       ]
     },
@@ -448,16 +448,16 @@
       "latestNews": "Latest News",
       "news": [
         {
-          "title": "New Technology Laboratory",
-          "desc": "SAGIT's new laboratory is equipped with the latest technologies and is ready to welcome students."
+          "title": "Getting drafted?",
+          "desc": "SAGIT students can enjoy unlimited military service deferral. We’ll load you up with as much as you need."
         },
         {
-          "title": "International Partnership",
-          "desc": "SAGIT has signed a memorandum of cooperation with leading European technological universities."
+          "title": "Don’t want to get married?",
+          "desc": "Become a SAGIT student and save your parents from limo and wedding debt."
         },
         {
-          "title": "Scholarships for 2025-2026",
-          "desc": "Learn more about our updated scholarship programs for the upcoming academic year."
+          "title": "Tired of hanging out at the corner?",
+          "desc": "SAGIT’s campus is the best place to chill. Our comfy environment and ‘sunflower seed collecting’ robots will make your downtime legendary."
         }
       ]
     },
