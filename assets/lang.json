@@ -21,7 +21,7 @@
     },
     "home": {
   "whyUs": "რატომ საღუნი?",
-  "whyUsDesc": "ჯარში მიყავხარ? საღუნის სტუდენტებს შეუძლიათ მიიღონ სამხედრო სამსახურის გადავადების უსასრულო შესაძლებლობა. ჩვენ იმდენს შეგტენით რამდენიც საჭიროა. | გათხოვება არ გინდა? გახდით საღუნის სტუდენტი და აარიდეთ მშობლებს ლიმუზინის და ქორწილის ვალი. | ბირჟა მოგბეზრდა? საღუნის კამპუსი ბირჯაობისთვის საუკეთესოა. ჩვენი კეთილმოწყობილი გარემო და 'სემიჩკაკრეფია' რობოტები თქვენი პახაობის გამოციდილებას სანუკვარს გახდის.",
+  "whyUsDesc": "ჯარში მიყავხარ? საღუნის სტუდენტებს შეუძლიათ მიიღონ სამხედრო სამსახურის გადავადების უსასრულო შესაძლებლობა. ჩვენ იმდენს შეგტენით რამდენიც საჭიროა.\n\nგათხოვება არ გინდა? გახდი საღუნის სტუდენტი და აარიდე მშობლებს ლიმუზინის და ქორწილის ვალი.\n\nბირჟა მოგბეზრდა? საღუნის კამპუსი ბირჯაობისთვის საუკეთესოა. ჩვენი კეთილმოწყობილი გარემო და 'სემიჩკაკრეფია' რობოტები თქვენი პახაობის გამოციდილებას სანუკვარს გახდის.",
       "modernPrograms": "თანამედროვე სასწავლო პროგრამები",
       "modernProgramsDesc": "ჩვენი პროგრამები შემუშავებულია ინდუსტრიის საუკეთესო პრაქტიკოსებთან ერთად, რათა მოგაწოდოთ რელევანტური და მოთხოვნადი უნარები.",
       "research": "ინოვაციური კვლევა",
@@ -429,7 +429,7 @@
     },
     "home": {
   "whyUs": "Why SAGIT?",
-  "whyUsDesc": "Getting drafted? SAGIT students can enjoy unlimited military service deferral. We’ll load you up with as much as you need. | Don’t want to get married? Become a SAGIT student and save your parents from limo and wedding debt. | Tired of hanging out at the corner? SAGIT’s campus is the best place to chill. Our comfy environment and ‘sunflower seed collecting’ robots will make your downtime legendary.",
+  "whyUsDesc": "Getting drafted? SAGIT students can enjoy unlimited military service deferral. We’ll load you up with as much as you need.\n\nDon’t want to get married? Become a SAGIT student and save your parents from limo and wedding debt.\n\nTired of hanging out at the corner? SAGIT’s campus is the best place to chill. Our comfy environment and ‘sunflower seed collecting’ robots will make your downtime legendary.",
       "modernPrograms": "Modern Educational Programs",
       "modernProgramsDesc": "Our programs are developed with industry practitioners to provide you with relevant and in-demand skills.",
       "research": "Innovative Research",
