@@ -712,6 +712,110 @@ textarea.form-control {
     border-radius: 8px;
 }
 
+/* --- Modern Why Us and News Segments --- */
+.whyus-modern {
+  padding: 48px 0;
+  background: #f8fafc;
+}
+.whyus-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.whyus-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
+  max-width: 340px;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whyus-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.whyus-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.whyus-content {
+  padding: 24px 18px 18px 18px;
+  text-align: center;
+}
+.whyus-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+.whyus-content p {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.news-modern {
+  padding: 48px 0;
+  background: #fff;
+}
+.news-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.news-card {
+  background: #f1f5f9;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  max-width: 340px;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.news-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.news-content {
+  padding: 24px 18px 18px 18px;
+  text-align: center;
+}
+.news-title {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  color: #334155;
+}
+.news-content p {
+  color: #64748b;
+  font-size: 0.98rem;
+}
+.news-content .btn {
+  margin-top: 12px;
+  background: #e6b76c;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.news-content .btn:hover {
+  background: #cfa24e;
+}
+
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .main-header {
