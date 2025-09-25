@@ -399,7 +399,7 @@
       "address": "ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი",
       "phone": "+995 32 222 33 44",
       "email": "info@sagit.edu.ge",
-      "copyright": "ყველა უფლება დაცულია"
+      "copyright": "არცერთი უფლება დაცული არ არის"
     },
     "error": {
       "title": "მანდ რა გინდა ეს... ?",
@@ -807,7 +807,7 @@
       "address": "Kvemo Ponichala, 19 Rustaveli Street, Tbilisi",
       "phone": "+995 32 222 33 44",
       "email": "info@sagit.edu.ge",
-      "copyright": "All rights reserved"
+      "copyright": "No rights reserved"
     },
     "error": {
       "title": "Which dev should we fire?",
