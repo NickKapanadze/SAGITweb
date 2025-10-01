@@ -1,0 +1,37 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 20px 20px;
+}
+
+body {
+  background: radial-gradient(circle, #711416, #390A0B);
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/images/bg.png') center center no-repeat;
+  background-size: 50%;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .home-page {
+    padding-top: 100px;
+  }
+}

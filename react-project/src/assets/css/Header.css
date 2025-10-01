@@ -1,0 +1,145 @@
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px 10px 40px;
+  box-sizing: border-box;
+  background: rgba(30, 10, 10, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #E6B76C;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.ig-icon svg {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.ig-icon:hover svg {
+  transform: scale(1.12) rotate(-8deg);
+  filter: drop-shadow(0 0 4px #E6B76C88);
+}
+
+/* Mobile Navigation */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 24px;
+  position: relative;
+  z-index: 102;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #E6B76C;
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: rgba(30, 10, 10, 0.95);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px 40px;
+  transition: right 0.3s ease;
+  z-index: 101;
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav .nav-link {
+  padding: 16px 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(230, 183, 108, 0.2);
+}
+
+.mobile-nav .ig-link {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px 0;
+  color: #E6B76C;
+  text-decoration: none;
+}
+
+.mobile-nav .ig-link span {
+  margin-left: 12px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .main-header {
+    padding: 15px 20px;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
