@@ -969,6 +969,10 @@ textarea.form-control {
         z-index: 1000;
     }
     
+    .nav-menu.active {
+        right: 0;
+    }
+    
     .nav-menu.active .dropdown-menu {
         position: static;
         opacity: 1;
