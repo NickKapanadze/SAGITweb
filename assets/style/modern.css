@@ -40,7 +40,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../images/bg.png') center center no-repeat;
+    background: url('../images/bg.webp') center center no-repeat;
     background-size: 50%;
     opacity: 0.06;
     pointer-events: none;

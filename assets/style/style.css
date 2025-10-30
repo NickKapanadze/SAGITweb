@@ -47,6 +47,7 @@ body {
 .logo img {
     height: 40px;
     width: auto;
+    top: 0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
@@ -197,7 +198,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../images/bg.png') center center no-repeat;
+    background: url('../images/bg.webp') center center no-repeat;
     background-size: 50%;
     opacity: 0.06;
     pointer-events: none;
