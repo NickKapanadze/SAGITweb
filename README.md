@@ -2,6 +2,22 @@
 
 A production-ready, browser-based party game platform inspired by Kahoot, fully customized for Mafia/Werewolf-style games.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![NestJS](https://img.shields.io/badge/NestJS-10-red)](https://nestjs.com/)
+
+## 📖 Table of Contents
+
+- [Overview](#overview)
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Architecture](#-architecture)
+- [Technology Stack](#-technology-stack)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
 ## Overview
 
 This is a full-stack multiplayer game platform with three distinct client types:
@@ -11,9 +27,58 @@ This is a full-stack multiplayer game platform with three distinct client types:
 
 Players join via 6-digit party codes, receive secret roles, and play in synchronized real-time with server-authoritative game logic.
 
+## ⚡ Quick Start
+
+**Want to get started immediately?** See [QUICKSTART.md](QUICKSTART.md) for a 5-minute setup guide!
+
+```bash
+# Clone and start with Docker
+git clone https://github.com/NickKapanadze/SAGITweb.git
+cd SAGITweb
+docker-compose up -d
+
+# Access at http://localhost:3001
+```
+
+## ✨ Features
+
+### Core Gameplay
+
+- ✅ **Multiple Game Phases**: Day discussion, speeches, voting, and night actions
+- ✅ **6 Default Roles**: Citizen, Mafia, Don Mafia, Detective, Doctor, Serial Killer
+- ✅ **Voting System**: Anonymous or visible voting modes
+- ✅ **Night Actions**: Kill, heal, and investigate abilities
+- ✅ **Win Conditions**: Team-based victory with multiple paths to win
+- ✅ **Real-time Sync**: All clients update instantly via WebSocket
+
+### Client Features
+
+#### 📺 TV Display
+- Party code and QR code for easy joining
+- Live game state display
+- Player status (alive/dead)
+- Speaking order indicator
+- Auto-reconnect on refresh
+
+#### 🎮 Host Control
+- Complete game configuration
+- Phase advancement controls
+- Player management
+- Foul assignment system
+- Full voting visibility
+
+#### 📱 Player Interface
+- Mobile-first responsive design
+- Secret role assignment
+- Anonymous/visible voting
+- Night action submission
+- Auto-reconnect on disconnect
+
 ## 🏗️ Architecture
 
-### Technology Stack
+For detailed architecture documentation, see [ARCHITECTURE.md](ARCHITECTURE.md).
+
+## 🛠️ Technology Stack
 
 **Backend:**
 - Node.js with NestJS
@@ -281,17 +346,34 @@ npm run build
 docker-compose build
 ```
 
+## 📚 Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System design and architecture
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Production deployment guide
+- **[LICENSE](LICENSE)** - MIT License
+
 ## 📝 License
 
-MIT License - See LICENSE file for details
+MIT License - See [LICENSE](LICENSE) file for details
 
 ## 👥 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+### Development Setup
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linters: `npm run lint`
+5. Submit a pull request
+
 ## 🆘 Support
 
-For issues and questions, please open an issue on GitHub.
+- **Issues**: [GitHub Issues](https://github.com/NickKapanadze/SAGITweb/issues)
+- **Documentation**: See docs above
+- **Questions**: Open a discussion on GitHub
 
 ---
 
