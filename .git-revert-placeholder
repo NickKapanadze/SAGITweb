@@ -1,0 +1,7 @@
+This is a placeholder file to create the revert commit.
+This will be removed after the revert is complete.
+
+Reverting merge commit: 808440cd644dc6ef2aa4ac0cd3d7c3d0ccedb1e0
+
+This commit reverts the changes introduced by PR #2 which removed Mafia game code
+that was merged to the wrong repository.
