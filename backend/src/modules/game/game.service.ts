@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Session, Player, Role, Vote, NightAction, Foul } from '../../entities';
 import { GameState, Team, ActionType, VotingMode } from '../../enums';
+import { randomInt } from 'crypto';
 
 @Injectable()
 export class GameService {
@@ -57,9 +58,9 @@ export class GameService {
       }
     }
 
-    // Shuffle role assignments
+    // Shuffle role assignments using Fisher-Yates with crypto
     for (let i = roleAssignments.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
+      const j = randomInt(0, i + 1);
       [roleAssignments[i], roleAssignments[j]] = [roleAssignments[j], roleAssignments[i]];
     }
 

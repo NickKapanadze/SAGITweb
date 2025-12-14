@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 import { Session, Player } from '../../entities';
 import { GameState, VotingMode } from '../../enums';
 import { v4 as uuidv4 } from 'uuid';
+import { randomInt } from 'crypto';
 
 @Injectable()
 export class SessionService {
@@ -105,9 +106,7 @@ export class SessionService {
   }
 
   private generatePartyCode(): string {
-    // Use crypto for secure random number generation
-    const crypto = require('crypto');
-    const randomNum = crypto.randomInt(100000, 1000000);
+    const randomNum = randomInt(100000, 1000000);
     return randomNum.toString();
   }
 

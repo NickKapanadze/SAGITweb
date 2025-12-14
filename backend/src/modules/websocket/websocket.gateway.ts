@@ -113,6 +113,19 @@ export class WebsocketGateway implements OnGatewayConnection, OnGatewayDisconnec
         return;
       }
 
+      // Verify host token
+      const session = await this.sessionService.findById(data.sessionId);
+      if (!session) {
+        client.emit(WebSocketEvent.ERROR, { message: 'Session not found' });
+        return;
+      }
+
+      const isValidHost = await this.sessionService.validateHostToken(session.partyCode, clientInfo.hostToken || '');
+      if (!isValidHost) {
+        client.emit(WebSocketEvent.ERROR, { message: 'Invalid host credentials' });
+        return;
+      }
+
       await this.gameService.startGame(data.sessionId);
       
       const state = await this.sessionService.getSessionState(data.sessionId);
@@ -221,7 +234,10 @@ export class WebsocketGateway implements OnGatewayConnection, OnGatewayDisconnec
 
       client.emit(WebSocketEvent.SESSION_STATE_UPDATE, { nightActionSubmitted: true });
     } catch (error) {
-      client.emit(WebSocketEvent.ERROR, { message: error.message || 'Failed to submit night action' });
+      const errorMessage = error instanceof Error && error.message.includes('not found') 
+        ? error.message 
+        : 'Failed to submit night action';
+      client.emit(WebSocketEvent.ERROR, { message: errorMessage });
     }
   }
 

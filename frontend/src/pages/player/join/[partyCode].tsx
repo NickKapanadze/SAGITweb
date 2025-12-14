@@ -18,13 +18,15 @@ export default function JoinGame() {
     // Fetch session to get available slots
     const fetchSession = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/session/${partyCode}/state`);
-        
-        // This would need the session ID, but for simplicity we'll use the default max players
+        // First, try to get session info to find available slots
+        // For now, we'll use all slots and let the backend validate
         const slots = Array.from({ length: DEFAULT_MAX_PLAYERS }, (_, i) => i + 1);
         setAvailableSlots(slots);
       } catch (error) {
         console.error('Failed to fetch session:', error);
+        // Default to showing all slots
+        const slots = Array.from({ length: DEFAULT_MAX_PLAYERS }, (_, i) => i + 1);
+        setAvailableSlots(slots);
       }
     };
 
