@@ -298,8 +298,12 @@ export class GameService {
       relations: ['role'],
     });
 
-    if (!player || !player.role) {
-      throw new Error('Player or role not found');
+    if (!player) {
+      throw new Error('Player not found');
+    }
+
+    if (!player.role) {
+      throw new Error('Player role not assigned');
     }
 
     // Check if player can perform this action

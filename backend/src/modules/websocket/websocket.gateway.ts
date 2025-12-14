@@ -132,7 +132,8 @@ export class WebsocketGateway implements OnGatewayConnection, OnGatewayDisconnec
         }
       }
     } catch (error) {
-      client.emit(WebSocketEvent.ERROR, { message: 'Failed to start game' });
+      const errorMessage = error instanceof Error ? error.message : 'Failed to start game';
+      client.emit(WebSocketEvent.ERROR, { message: errorMessage });
     }
   }
 
@@ -187,7 +188,8 @@ export class WebsocketGateway implements OnGatewayConnection, OnGatewayDisconnec
         });
       });
     } catch (error) {
-      client.emit(WebSocketEvent.ERROR, { message: 'Failed to submit vote' });
+      const errorMessage = error instanceof Error ? error.message : 'Failed to submit vote';
+      client.emit(WebSocketEvent.ERROR, { message: errorMessage });
     }
   }
 

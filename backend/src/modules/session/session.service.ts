@@ -105,7 +105,10 @@ export class SessionService {
   }
 
   private generatePartyCode(): string {
-    return Math.floor(100000 + Math.random() * 900000).toString();
+    // Use crypto for secure random number generation
+    const crypto = require('crypto');
+    const randomNum = crypto.randomInt(100000, 1000000);
+    return randomNum.toString();
   }
 
   async validateHostToken(partyCode: string, hostToken: string): Promise<boolean> {

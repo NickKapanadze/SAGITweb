@@ -2,6 +2,8 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
+const DEFAULT_MAX_PLAYERS = 12;
+
 export default function JoinGame() {
   const router = useRouter();
   const { partyCode } = router.query;
@@ -18,8 +20,8 @@ export default function JoinGame() {
       try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/session/${partyCode}/state`);
         
-        // This would need the session ID, but for simplicity we'll just show slots 1-12
-        const slots = Array.from({ length: 12 }, (_, i) => i + 1);
+        // This would need the session ID, but for simplicity we'll use the default max players
+        const slots = Array.from({ length: DEFAULT_MAX_PLAYERS }, (_, i) => i + 1);
         setAvailableSlots(slots);
       } catch (error) {
         console.error('Failed to fetch session:', error);
