@@ -14,7 +14,7 @@ npm run preview
 
 Preview: http://127.0.0.1:4173. Stop the preview with Ctrl+C.
 
-Edit page content and templates in `scripts/build.mjs`, visual styles in `assets/style/site.css`, and browser behavior in `assets/js/site.js`. Build regenerates the root HTML files (compatible with the original static host) and publishes the same pages to `dist/`. Georgian content remains readable without JavaScript; English selection persists when browser storage is available. Fonts use the free Google Fonts service with system fallbacks.
+Edit shared pages in `scripts/build.mjs`, homepage/campus content in `scripts/editorial-template.mjs`, base styles in `assets/style/site.css`, editorial design in `assets/style/editorial.css`, and browser behavior in `assets/js/site.js`. Build regenerates the root HTML files (compatible with the original static host) and publishes the same pages to `dist/`. The build clears only its verified `dist` directory and publishes an explicit set of runtime assets. Georgian content remains readable without JavaScript; English selection persists when browser storage is available. Fonts use the free Google Fonts service with system fallbacks.
 
 ## Render static hosting
 
@@ -23,6 +23,8 @@ Edit page content and templates in `scripts/build.mjs`, visual styles in `assets
 - Build command: `npm run build`
 - Publish directory: `dist`
 - A matching `render.yaml` is included; no server, database, paid assets, or background worker is needed.
+
+The current service was created from a public repository URL. Render requires manual deploys for this connection type even though its service metadata reports auto-deploy enabled. Check deployment history before triggering, deploy the latest pushed commit when no automatic deploy is pending, then verify the served `/build.json` against that SHA. A connected Git-provider installation is needed for automatic builds.
 
 Static hosting is free within Render's included usage. Account-level bandwidth/build overages can still apply when billing is enabled. Verify account billing controls before changing DNS; maintain the user's $0 budget. Do not select paid compute or add a payment method for this project.
 
@@ -34,12 +36,10 @@ Verify the Render deployment first. Add both `www.sagit.com.ge` and `sagit.com.g
 
 All public copy speaks as the university. The contact page links to the existing Instagram account `@sgt_uni`; it does not pretend to send messages or collect identity documents. Generic social links, unverified contact details, expired admission dates, and the expired countdown were removed. New admissions dates await publication rather than being invented. Program filters, native expandable details, mobile navigation, and language selection are implemented without external JavaScript dependencies.
 
-## Interactive campus
+## Editorial design and campus guide
 
-The homepage and `/campus.html` use the 14 destinations in the Instagram plan as their layout reference. `assets/js/campus-model.js` contains named destinations, bilingual copy, and architectural geometry. It is a schematic interpretation of a low-resolution plan, not surveyed dimensions or verified building heights. Only Business and Humanities have dedicated named school buildings in the plan; other school links use the academic quarter rather than inventing separate building positions.
+The user rejected the 3D campus treatment on 2026-11-27 and requested an informative website with a striking visual identity. The site uses oversized typography, deep burgundy-black backgrounds, bright yellow-gold accents, angular image compositions, and editorial school directories. Content, program comparisons, admissions information, and school navigation are the primary experience.
 
-`scripts/campus-template.mjs` creates the interface and an SVG landscape visible before JavaScript loads. The locally served renderer loads on demand, uses Canvas with projected 3D geometry, and redraws only for interaction, camera transitions, resizing, or language changes. It does not use a 3D engine, external map API, paid service, downloaded mesh, video, or continuous animation. Render resolution is capped at 1.75 device pixels per CSS pixel. Reduced-motion preferences skip camera animation.
+The 3D renderer, generated geometry, and camera controls have been removed from the source and build. `scripts/campus-data.mjs` retains the bilingual descriptions of the 14 destinations in the Instagram plan. `/campus.html` presents the original plan alongside a readable expandable destination directory. Business and Humanities have named buildings in the plan; other school links use the academic quarter. School links open the appropriate destination using fragments such as `#business`; previous `?place=business` links still open the matching section.
 
-Visitors can select numbered pins or the destination list, filter by learning/life/sport, rotate, zoom, switch to a top-down plan, and open school pages. Campus deep links use `?place=business`, `?place=humanities`, or any destination key. School pages link into the relevant campus location. Touch devices retain vertical page scrolling; horizontal drag rotates. Zoom buttons work on all devices; modified wheel and pinch zoom are supported.
-
-The source plan is preserved in `references/` and published at `/assets/images/campus-plan.jpg`. It is the profile-size public image, not verified original resolution. Both no-JavaScript and canvas-unavailable paths preserve a static landscape and links. `npm run check` verifies plan geography, destinations, finite camera projection, school links, and compressed-size budgets alongside the page/link checks.
+The source plan is preserved in `references/` and published at `/assets/images/campus-plan.jpg`. It is the profile-size public image, not verified original resolution. The campus directory and program details work without JavaScript through native details elements. Checks verify all pages, links, fragments, bilingual strings, the 14 campus destinations, and that retired 3D assets are absent from published output.

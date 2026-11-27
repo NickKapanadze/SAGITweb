@@ -10,6 +10,7 @@ for(const file of files){
  assert.ok(html.includes('<html lang="ka">'),`${file}: Georgian default`);
  assert.ok(html.includes('<main id="main">'),`${file}: main landmark`);
  assert.ok(!/href="#"|loading-screen|2025-10-20/.test(html),`${file}: obsolete placeholder`);
+ assert.ok(!/<canvas|campus-poster|data-camera|campus-explorer/.test(html),`${file}: retired 3D UI must stay removed`);
  assert.ok(!/იუმორ|სატირ|გამოგონილ|satir|fiction|humor|KA \/ EN/i.test(html),`${file}: stay in university character`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(ids.length,new Set(ids).size,`${file}: duplicate ids`);
@@ -22,5 +23,10 @@ for(const file of files){
  }
 }
 assert.equal(files.length,16);
+for(const retired of ['assets/js/campus.js','assets/js/campus-model.js','assets/style/campus.css']){
+ await assert.rejects(access(path.join(root,retired)),`${retired}: retired asset still published`);
+}
+const campus=await readFile(path.join(root,'campus.html'),'utf8');
+assert.equal((campus.match(/class="destination-detail"/g)||[]).length,14,'Campus keeps all 14 informative destinations');
 const js=await readFile('assets/js/site.js','utf8');assert.ok(js.includes('try { localStorage.setItem'), 'storage-disabled browsers supported');
 console.log(`PASS: ${files.length} pages, ${links} local links/assets, ${translations} bilingual strings, landmarks, unique IDs, and all fragment targets.`);

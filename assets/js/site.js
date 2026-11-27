@@ -25,22 +25,9 @@
     document.querySelectorAll('.filter').forEach(other => { const selected = other === button; other.classList.toggle('active',selected); other.setAttribute('aria-pressed',String(selected)); });
     document.querySelectorAll('[data-level]').forEach(card => { card.hidden = button.dataset.filter !== 'all' && card.dataset.level !== button.dataset.filter; });
   }));
-  // Load the campus renderer only on pages that show it and only near the viewport.
-  const campusRoots=document.querySelectorAll('[data-campus]');
-  function campusFallback(root){
-    root.classList.add('campus-static');
-    root.querySelectorAll('[data-destination]').forEach(button=>{
-      const anchor=document.createElement('a');anchor.href=button.dataset.fallback;anchor.className=button.className;
-      while(button.firstChild)anchor.append(button.firstChild);button.replaceWith(anchor);
-    });
-    const hint=root.querySelector('.campus-hint');hint.dataset.ka='აირჩიე ადგილი სიიდან მეტი ინფორმაციისთვის';hint.dataset.en='Choose a destination from the guide to learn more';hint.textContent=hint.dataset[language];
-  }
-  if(campusRoots.length){
-    const observer=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{if(!entry.isIntersecting)return;observer.unobserve(entry.target);
-        import('./campus.js').then(({initCampus})=>initCampus(entry.target)).catch(()=>campusFallback(entry.target));
-      });
-    },{rootMargin:'200px'});
-    campusRoots.forEach(root=>observer.observe(root));
-  }
+  // Open a campus destination from a school link or an older shared campus URL.
+  const destination=new URL(location.href).searchParams.get('place')||location.hash.slice(1);
+  const target=destination?document.getElementById(destination):null;
+  if(target?.matches('.destination-detail'))target.open=true;
+  window.addEventListener('hashchange',()=>{const detail=document.getElementById(location.hash.slice(1));if(detail?.matches('.destination-detail'))detail.open=true;});
 })();
