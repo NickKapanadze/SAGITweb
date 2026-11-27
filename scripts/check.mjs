@@ -30,6 +30,11 @@ for(const retired of ['assets/js/campus.js','assets/js/campus-model.js','assets/
 const campus=await readFile(path.join(root,'campus.html'),'utf8');
 const about=await readFile(path.join(root,'about.html'),'utf8');
 assert.ok(about.includes('data-ka="რატომ საღუნი?"'),'Preserve the established Why SAGIT heading');
+const original=JSON.parse(await readFile('assets/lang.json','utf8'));
+for(const lang of ['ge','en'])for(const text of Object.values(original[lang].home.whyUsDetails)){
+ const escaped=text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+ assert.ok(about.includes(escaped),'Preserve the author’s original Why SAGIT copy verbatim');
+}
 assert.equal((campus.match(/class="destination-detail"/g)||[]).length,14,'Campus keeps all 14 informative destinations');
 const js=await readFile('assets/js/site.js','utf8');assert.ok(js.includes('try { localStorage.setItem'), 'storage-disabled browsers supported');
 console.log(`PASS: ${files.length} pages, ${links} local links/assets, ${translations} bilingual strings, landmarks, unique IDs, and all fragment targets.`);

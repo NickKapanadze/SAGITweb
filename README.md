@@ -36,6 +36,8 @@ Verify the Render deployment first. Add both `www.sagit.com.ge` and `sagit.com.g
 
 All public copy speaks as the university. The contact page links to the existing Instagram account `@sgt_uni`; it does not pretend to send messages or collect identity documents. Generic social links, unverified contact details, expired admission dates, and the expired countdown were removed. New admissions dates await publication rather than being invented. Program filters, native expandable details, mobile navigation, and language selection are implemented without external JavaScript dependencies.
 
+Preserve the author's existing copy during visual changes. The three “რატომ საღუნი? / Why SAGIT?” cards read their Georgian and English headings/descriptions directly from the original `assets/lang.json` (`home.whyUsDetails`). Do not rewrite or soften them. The original supplied wording takes precedence over newly written marketing copy.
+
 ## Editorial design and campus guide
 
 The user rejected the 3D campus treatment on 2026-11-27 and requested an informative website with a striking visual identity. The current palette is red, warm metallic gold, black, and white, with oversized typography and editorial school directories. Content, program comparisons, admissions information, and school navigation are the primary experience. Use the complete university name in long-form placements: **სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი** / **Sardival Ghobeglejiashvili Institute of Technology**. Preserve **რატომ საღუნი? / Why SAGIT?** as the established section heading.
