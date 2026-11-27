@@ -1,5 +1,13 @@
 (() => {
   let language = 'ka';
+  let motionPaused = false;
+  const motionButtons = document.querySelectorAll('.motion-toggle');
+  function updateMotionLabel(){
+    motionButtons.forEach(button=>{
+      button.textContent=language==='en'?(motionPaused?'Resume motion':'Pause motion'):(motionPaused?'ანიმაციის გაგრძელება':'ანიმაციის შეჩერება');
+      button.setAttribute('aria-pressed',String(motionPaused));
+    });
+  }
   try { if (localStorage.getItem('language') === 'en') language = 'en'; } catch {}
   const languageButton = document.getElementById('language');
   function applyLanguage() {
@@ -11,6 +19,7 @@
     document.querySelector('nav').setAttribute('aria-label',language === 'ka' ? 'მთავარი ნავიგაცია' : 'Main navigation');
     document.querySelector('.filter-bar')?.setAttribute('aria-label',language === 'ka' ? 'პროგრამის საფეხური' : 'Program level');
     document.dispatchEvent(new CustomEvent('sagit:language',{detail:language}));
+    updateMotionLabel();
   }
   languageButton.addEventListener('click', () => { language = language === 'ka' ? 'en' : 'ka'; try { localStorage.setItem('language', language); } catch {} applyLanguage(); });
   applyLanguage();
@@ -30,4 +39,15 @@
   const target=destination?document.getElementById(destination):null;
   if(target?.matches('.destination-detail'))target.open=true;
   window.addEventListener('hashchange',()=>{const detail=document.getElementById(location.hash.slice(1));if(detail?.matches('.destination-detail'))detail.open=true;});
+  const artworks=document.querySelectorAll('.motion-art');
+  if(artworks.length){
+    motionButtons.forEach(button=>{button.hidden=false;button.addEventListener('click',()=>{
+      motionPaused=!motionPaused;document.documentElement.dataset.motionPaused=String(motionPaused);updateMotionLabel();
+    });});
+    if('IntersectionObserver' in window){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{entry.target.dataset.visible=String(entry.isIntersecting);}),{threshold:.05});
+      artworks.forEach(art=>observer.observe(art));
+    }
+    document.addEventListener('visibilitychange',()=>{document.documentElement.dataset.pageHidden=String(document.hidden);});
+  }
 })();
