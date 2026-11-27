@@ -1,298 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGIT - სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</title>
-
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="/assets/style/modern.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="/assets/js/language.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>მთავარი · SAGIT</title>
+<meta name="description" content="SAGIT — აღმოაჩინე საღუნის პროგრამები, სკოლები და სტუდენტური ცხოვრება.">
+<meta name="theme-color" content="#641b2b">
+<link rel="canonical" href="https://www.sagit.com.ge/">
+<meta property="og:title" content="მთავარი · SAGIT">
+<meta property="og:description" content="შენი მომავალი იწყება აქ. აღმოაჩინე SAGIT-ის პროგრამები და სკოლები.">
+<meta property="og:image" content="https://www.sagit.com.ge/assets/images/banner1.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/webp" href="/assets/images/bg.webp">
+<link rel="stylesheet" href="/assets/style/site.css">
+<link rel="stylesheet" href="/assets/style/editorial.css">
+<script src="/assets/js/site.js" defer>
+</script>
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-                <span class="loading-text">SAGIT</span>
-            </div>
-            <p class="loading-message">იტვირთება...</p>
-        </div>
-    </div>
-
-    <header class="main-header">
-        <div class="logo">
-            <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-            <span class="logo-text">SAGIT</span>
-        </div>
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-            <span class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link active" data-i18n="navigation.home">მთავარი</a>
-            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
-            <div class="dropdown">
-                <a href="programs.html" class="nav-link dropdown-toggle" data-i18n="navigation.programs">პროგრამები</a>
-                <div class="dropdown-menu">
-                    <a href="programs.html" data-i18n="navigation.programs">პროგრამები</a>
-                    <a href="schools.html">სკოლები</a>
-                    <a href="research.html">კვლევა</a>
-                </div>
-            </div>
-            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
-            <a href="contact.html" class="nav-link" data-i18n="navigation.contact">კონტაქტი</a>
-        </nav>
-        <div class="social-icons">
-            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
-                </svg>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-    </header>
-
-    <section class="hero" style="background-image: url('/assets/images/banner1.webp');">
-        <div class="hero-content">
-            <h1 data-i18n="university.name">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</h1>
-            <p data-i18n="university.slogan">სწავლება ინოვაციის, კვლევისა და განვითარების სამსახურში</p>
-            <div>
-                <a href="programs.html" class="btn" data-i18n="buttons.ourPrograms">ჩვენი პროგრამები</a>
-                <a href="about.html" class="btn btn-outline" data-i18n="buttons.readMore">გაიგე მეტი</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center" data-i18n="home.whyUs">რატომ საღუნი?</h2>
-            <p class="text-center" data-i18n="home.whyUsDesc">აღმოაჩინეთ თუ რატომ არის საღუნი საუკეთესო არჩევანი თქვენი აკადემიური და პროფესიული ზრდისთვის</p>
-            <div class="grid">
-                <div class="card">
-                    <img src="/assets/images/vkuduxovi.webp" alt="Army Deferral" class="card-img">
-                    <div class="card-content">
-                        <h3 class="card-title" data-i18n="home.whyUsDetails.army">ჯარში მიყავხარ?</h3>
-                        <p data-i18n="home.whyUsDetails.armyDesc">საღუნის სტუდენტებს შეუძლიათ მიიღონ სამხედრო სამსახურის გადავადების უსასრულო შესაძლებლობა. ჩვენ იმდენს შეგტენით რამდენიც საჭიროა.</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/assets/images/qorwili.webp" alt="No Marriage" class="card-img">
-                    <div class="card-content">
-                        <h3 class="card-title" data-i18n="home.whyUsDetails.wedding">გათხოვება არ გინდა?</h3>
-                        <p data-i18n="home.whyUsDetails.weddingDesc">გახდით საღუნის სტუდენტი და აარიდეთ მშობლებს ლიმუზინის და ქორწილის ვალი.</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/assets/images/birja.webp" alt="Campus Chill" class="card-img">
-                    <div class="card-content">
-                        <h3 class="card-title" data-i18n="home.whyUsDetails.chill">ბირჟა მოგბეზრდა?</h3>
-                        <p data-i18n="home.whyUsDetails.chillDesc">საღუნის კამპუსი ბირჯაობისთვის საუკეთესოა. ჩვენი კეთილმოწყობილი გარემო და "სემიჩკაკრეფია" რობოტები თქვენი პახაობის გამოციდილებას სანუკვარს გახდის.</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center" data-i18n="home.latestNews">სიახლეები</h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <img src="/assets/images/newcampus.webp" alt="Campus Opening" class="news-img">
-                    <div class="news-content">
-                        <h3 class="news-title" data-i18n="home.news.0.title">ახალი კამპუსის გახსნა!</h3>
-                        <p data-i18n="home.news.0.desc">2025 წლის ოქტომბერში საღუნი-ი იხსნება ახალ, თანამედროვე კამპუსში. შემოგვიერთდით საზეიმო ღონისძიებაზე!</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <img src="/assets/images/startups.webp" alt="Startup Competition" class="news-img">
-                    <div class="news-content">
-                        <h3 class="news-title" data-i18n="home.news.1.title">სტუდენტური სტარტაპების კონკურსი</h3>
-                        <p data-i18n="home.news.1.desc">წარმატებული სტუდენტური სტარტაპები მიიღებენ დაფინანსებას და მენტორობას უნივერსიტეტისგან. რეგისტრაცია უკვე დაიწყო!</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <img src="/assets/images/international.webp" alt="Exchange Programs" class="news-img">
-                    <div class="news-content">
-                        <h3 class="news-title" data-i18n="home.news.2.title">საერთაშორისო გაცვლითი პროგრამები</h3>
-                        <p data-i18n="home.news.2.desc">საღუნი-ი იწყებს გაცვლით პროგრამებს ევროპის წამყვან უნივერსიტეტებთან. გაიგეთ მეტი შესაძლებლობების შესახებ!</p>
-                        <a href="#" class="btn" data-i18n="buttons.fullView">სრულად ნახვა</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="info-text">
-        <p data-i18n="home.infoText">საღუნი-ის გუნდი მუშაობს ახალი და საინტერესო საგანმანათლებლო პროგრამების შექმნაზე, რომლებიც მალე იქნება ხელმისაწვდომი. დარჩით ჩვენთან და გაიგეთ მეტი საქართველოს წამყვანი ტექნოლოგიური უნივერსიტეტის შესახებ!</p>
-    </div>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center" data-i18n="home.countdown">ახალი პროგრამების დაწყებამდე</h2>
-            <div class="countdown">
-                <div class="time-box">
-                    <h3 id="months">00</h3>
-                    <p data-i18n="home.time.months">თვე</p>
-                    <progress id="months-progress" value="0" max="12"></progress>
-                </div>
-                <div class="time-box">
-                    <h3 id="days">00</h3>
-                    <p data-i18n="home.time.days">დღე</p>
-                    <progress id="days-progress" value="0" max="30"></progress>
-                </div>
-                <div class="time-box">
-                    <h3 id="hours">00</h3>
-                    <p data-i18n="home.time.hours">საათი</p>
-                    <progress id="hours-progress" value="0" max="24"></progress>
-                </div>
-                <div class="time-box">
-                    <h3 id="minutes">00</h3>
-                    <p data-i18n="home.time.minutes">წუთი</p>
-                    <progress id="minutes-progress" value="0" max="60"></progress>
-                </div>
-                <div class="time-box">
-                    <h3 id="seconds">00</h3>
-                    <p data-i18n="home.time.seconds">წამი</p>
-                    <progress id="seconds-progress" value="0" max="60"></progress>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>SAGIT</h4>
-                    <p data-i18n="footer.description">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 data-i18n="footer.quickLinks">სწრაფი ბმულები</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html" data-i18n="navigation.home">მთავარი</a></li>
-                        <li><a href="about.html" data-i18n="navigation.about">ჩვენს შესახებ</a></li>
-                        <li><a href="programs.html" data-i18n="navigation.programs">პროგრამები</a></li>
-                        <li><a href="admissions.html" data-i18n="navigation.admissions">მიღება</a></li>
-                        <li><a href="contact.html" data-i18n="navigation.contact">კონტაქტი</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 data-i18n="footer.contact">კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">რუსთაველის გამზირი 19, თბილისი</span></p>
-                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+995 32 222 33 44</span></p>
-                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.email">info@sagit.edu.ge</span></p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>🅮 2025 <span data-i18n="university.name">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-    // Loading screen functionality
-    window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loading-screen');
-
-        // Add a small delay for better UX
-        setTimeout(function() {
-            loadingScreen.classList.add('hidden');
-
-            // Remove from DOM after animation completes
-            setTimeout(function() {
-                loadingScreen.style.display = 'none';
-            }, 500);
-        }, 800);
-    });
-
-    const target_date = new Date("2025-10-20T13:30:00");
-    
-    function updateCountdown() {
-        const now = new Date();
-        const difference = target_date - now;
-        
-        if (difference > 0) {
-            const months = Math.floor(difference / (1000 * 60 * 60 * 24 * 30.44));
-            const days = Math.floor((difference % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-            
-            document.getElementById('months').textContent = months.toString().padStart(2, '0');
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-            
-            document.getElementById('months-progress').value = months;
-            document.getElementById('days-progress').value = days;
-            document.getElementById('hours-progress').value = hours;
-            document.getElementById('minutes-progress').value = minutes;
-            document.getElementById('seconds-progress').value = seconds;
-        }
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-
-    // Mobile menu toggle functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    });
-    </script>
+<body data-page="index" data-title-ka="მთავარი" data-title-en="Home">
+<a class="skip" href="#main">
+<span class="" data-ka="კონტენტზე გადასვლა" data-en="Skip to content">კონტენტზე გადასვლა</span>
+</a>
+<div class="topbar">
+<div class="wrap">
+<span>SARDIVAL GHOBEGLEJIASHVILI INSTITUTE OF TECHNOLOGY</span>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="სტუდენტური ცხოვრება @sgt_uni" data-en="Campus life @sgt_uni">სტუდენტური ცხოვრება @sgt_uni</span>
+</a>
+</div>
+</div>
+<header class="header">
+<div class="wrap header-inner">
+<a class="brand" href="/index.html" aria-label="SAGIT home">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" fetchpriority="high">
+<span>SAGIT<small>
+<span class="" data-ka="სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი" data-en="Sardival Ghobeglejiashvili Institute of Technology">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>
+</small>
+</span>
+</a>
+<button class="menu-toggle" aria-controls="navigation" aria-expanded="false">
+<span class="" data-ka="მენიუ" data-en="Menu">მენიუ</span> <span aria-hidden="true">☰</span>
+</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="/about.html" >
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a href="/programs.html" >
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a href="/schools.html" >
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a href="/campus.html" >
+<span class="" data-ka="კამპუსი" data-en="Campus">კამპუსი</span>
+</a>
+<a href="/research.html" >
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a href="/admissions.html" >
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</nav>
+<div class="header-actions">
+<button id="language" class="language" aria-label="Switch language">EN</button>
+<a class="button small" href="/contact.html">
+<span class="" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</span>
+</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="statement-hero">
+ <div class="hero-watermark" aria-hidden="true">SAGIT</div>
+ <div class="hero-visual">
+<div class="motion-art academy-art" aria-hidden="true">
+<svg viewBox="0 0 700 700" fill="none">
+<g class="art-grid">
+<path d="M50 0V700M0 50H700"/>
+<path d="M115 0V700M0 115H700"/>
+<path d="M180 0V700M0 180H700"/>
+<path d="M245 0V700M0 245H700"/>
+<path d="M310 0V700M0 310H700"/>
+<path d="M375 0V700M0 375H700"/>
+<path d="M440 0V700M0 440H700"/>
+<path d="M505 0V700M0 505H700"/>
+<path d="M570 0V700M0 570H700"/>
+<path d="M635 0V700M0 635H700"/>
+</g>
+<circle cx="350" cy="350" r="278" class="orbit-guide"/>
+<g class="art-orbit">
+<circle cx="350" cy="350" r="278" stroke-dasharray="170 120 60 150"/>
+<circle cx="350" cy="72" r="9" class="art-dot"/>
+<circle cx="350" cy="628" r="5" class="art-dot"/>
+</g>
+<g class="art-orbit reverse">
+<circle cx="350" cy="350" r="235" stroke-dasharray="3 18"/>
+</g>
+<path class="art-arch" d="M185 525V340a165 165 0 0 1 330 0v185M215 525V340a135 135 0 0 1 270 0v185M245 525V340a105 105 0 0 1 210 0v185"/>
+<path class="art-base" d="M145 530h410M165 550h370M185 570h330"/>
+<g class="knowledge-book">
+<path d="M350 360q-55-35-100-15v100q50-20 100 15 50-35 100-15V345q-45-20-100 15Z"/>
+<path d="M350 360v100M275 370q30-3 50 12M275 390q30-3 50 12M375 382q20-15 50-12M375 402q20-15 50-12"/>
+</g>
+<g class="art-flow">
+<path d="M60 350h95M545 350h95M350 20v110M350 600v80"/>
+</g>
+<text x="350" y="300" text-anchor="middle" class="art-monogram">S</text>
+<text x="72" y="327" class="art-meta">SGT</text>
+<text x="568" y="327" class="art-meta">SGB</text>
+<text x="430" y="120" class="art-meta">SGM</text>
+<text x="75" y="530" class="art-meta">SGL</text>
+<text x="550" y="530" class="art-meta">SGH</text>
+<text x="205" y="650" class="art-meta">SGP</text>
+<text x="450" y="650" class="art-meta">SGG</text>
+</svg>
+<div class="art-caption">
+<span>SAGIT / KNOWLEDGE IN MOTION</span>
+<span>THINK · CREATE · BECOME</span>
+</div>
+</div>
+</div>
+ <div class="wrap statement-layout">
+<div class="statement-copy">
+<div class="eyebrow">
+<span class="" data-ka="სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი" data-en="SARDIVAL GHOBEGLEJIASHVILI INSTITUTE OF TECHNOLOGY">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>
+</div>
+<h1>
+<span class="statement-line" data-ka="შენი" data-en="YOUR">შენი</span>
+<span class="statement-line accent" data-ka="ჯერია." data-en="MOVE.">ჯერია.</span>
+</h1>
+<p class="statement-lede" data-ka="აირჩიე მიმართულება, რომელიც შენ გგავს. შექმენი მომავალი, რომელსაც შენი სახელი ექნება." data-en="Find a direction that feels like you. Build a future with your name on it.">აირჩიე მიმართულება, რომელიც შენ გგავს. შექმენი მომავალი, რომელსაც შენი სახელი ექნება.</p>
+<div class="statement-actions">
+<a class="button gold" href="/programs.html">
+<span class="" data-ka="იპოვე შენი მიმართულება" data-en="Find your direction">იპოვე შენი მიმართულება</span>
+</a>
+<a class="hero-text-link" href="/about.html">
+<span class="" data-ka="ეს არის საღუნი" data-en="This is SAGIT">ეს არის საღუნი</span>
+</a>
+</div>
+</div>
+<div class="hero-seal-badge">
+<img class="" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" loading="lazy">
+<span>THINK. CREATE. BECOME.</span>
+</div>
+</div>
+ <div class="hero-baseline wrap">
+<span>TBILISI, GEORGIA</span>
+<span class="" data-ka="ცოდნა შენი შემდეგი ნაბიჯისთვის." data-en="Knowledge for your next move.">ცოდნა შენი შემდეგი ნაბიჯისთვის.</span>
+<a href="#discover">
+<span class="" data-ka="აღმოაჩინე საღუნი" data-en="Discover SAGIT">აღმოაჩინე საღუნი</span>
+</a>
+</div>
+</section>
+<div class="manifesto-strip">
+<span>SAGIT</span>
+<strong class="" data-ka="იფიქრე ფართოდ. შექმენი საკუთარი გზა." data-en="THINK BIGGER. MAKE YOUR OWN WAY.">იფიქრე ფართოდ. შექმენი საკუთარი გზა.</strong>
+<span aria-hidden="true">✳</span>
+</div>
+<section class="section wrap introduction" id="discover">
+<div>
+<div class="eyebrow">A DIFFERENT KIND OF AMBITION</div>
+<h2>
+<span class="" data-ka="მომავალი მზა" data-en="The future doesn’t">მომავალი მზა</span>
+<span class="ink-outline" data-ka="არ მოდის." data-en="come ready-made.">არ მოდის.</span>
+<span class="" data-ka="მას ქმნი." data-en="You make it.">მას ქმნი.</span>
+</h2>
+</div>
+<div class="intro-copy">
+<h3 class="" data-ka="დიდი გეგმები ერთი გადაწყვეტილებით იწყება: რა გინდა შექმნა?" data-en="Big plans begin with one decision: what do you want to create?">დიდი გეგმები ერთი გადაწყვეტილებით იწყება: რა გინდა შექმნა?</h3>
+<p class="" data-ka="ტექნოლოგიები, ბიზნესი, სამართალი, მედია — საღუნიში განსხვავებული ინტერესები ერთმანეთს ხვდება. აღმოაჩინე სკოლები, გაეცანი პროგრამებს და იპოვე სივრცე შენი მიზნებისთვის." data-en="Technology, business, law, media. At SAGIT, different interests meet. Explore the schools, understand the programs, and find room for your ambitions.">ტექნოლოგიები, ბიზნესი, სამართალი, მედია — საღუნიში განსხვავებული ინტერესები ერთმანეთს ხვდება. აღმოაჩინე სკოლები, გაეცანი პროგრამებს და იპოვე სივრცე შენი მიზნებისთვის.</p>
+<a class="text-link" href="/about.html">
+<span class="" data-ka="გაიცანი უნივერსიტეტი" data-en="Meet the university">გაიცანი უნივერსიტეტი</span>
+</a>
+<div class="editorial-facts">
+<div>
+<strong>7</strong>
+<span class="" data-ka="სკოლა" data-en="Schools">სკოლა</span>
+</div>
+<div>
+<strong>6</strong>
+<span class="" data-ka="სასწავლო პროგრამა" data-en="Study programs">სასწავლო პროგრამა</span>
+</div>
+<div>
+<strong>14</strong>
+<span class="" data-ka="კამპუსის სივრცე" data-en="Campus destinations">კამპუსის სივრცე</span>
+</div>
+</div>
+</div>
+</section>
+<section class="school-index">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<div class="eyebrow">FIND YOUR FIELD</div>
+<h2 class="" data-ka="შენი ინტერესი.
+შენი მიმართულება." data-en="Your interest.
+Your direction.">შენი ინტერესი.
+შენი მიმართულება.</h2>
+</div>
+<a class="text-link" href="/schools.html">
+<span class="" data-ka="გაიცანი ყველა სკოლა" data-en="Explore all schools">გაიცანი ყველა სკოლა</span>
+</a>
+</div>
+<div class="school-rows">
+<a href="/sgt.html" class="school-row">
+<span class="row-code">SGT</span>
+<h3 class="" data-ka="ტექნოლოგიები" data-en="Technology">ტექნოლოგიები</h3>
+<p class="" data-ka="კოდიდან პირველ პროტოტიპამდე — შექმენი ტექნოლოგია, რომელიც შენს იდეას რეალობად აქცევს." data-en="From code to a first prototype. Build the technology that brings your ideas to life.">კოდიდან პირველ პროტოტიპამდე — შექმენი ტექნოლოგია, რომელიც შენს იდეას რეალობად აქცევს.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgb.html" class="school-row">
+<span class="row-code">SGB</span>
+<h3 class="" data-ka="ბიზნესი" data-en="Business">ბიზნესი</h3>
+<p class="" data-ka="ხედვა, სტრატეგია და გადაწყვეტილებები — ისწავლე იდეის განვითარება ყველა მხრიდან." data-en="Perspective, strategy, and decisions. Learn to develop an idea from every angle.">ხედვა, სტრატეგია და გადაწყვეტილებები — ისწავლე იდეის განვითარება ყველა მხრიდან.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgl.html" class="school-row">
+<span class="row-code">SGL</span>
+<h3 class="" data-ka="სამართალი" data-en="Law">სამართალი</h3>
+<p class="" data-ka="გაიგე წესები. გაამყარე არგუმენტი. განავითარე აზროვნება, რომელსაც ცვლილების შექმნა შეუძლია." data-en="Understand the rules. Strengthen your argument. Develop the thinking that can shape change.">გაიგე წესები. გაამყარე არგუმენტი. განავითარე აზროვნება, რომელსაც ცვლილების შექმნა შეუძლია.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgm.html" class="school-row">
+<span class="row-code">SGM</span>
+<h3 class="" data-ka="მედია" data-en="Media">მედია</h3>
+<p class="" data-ka="იპოვე ამბავი, რომელიც მნიშვნელოვანია. მიეცი მას ხმა, ფორმა და საკუთარი პერსპექტივა." data-en="Find a story that matters. Give it a voice, a form, and a perspective of your own.">იპოვე ამბავი, რომელიც მნიშვნელოვანია. მიეცი მას ხმა, ფორმა და საკუთარი პერსპექტივა.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgh.html" class="school-row">
+<span class="row-code">SGH</span>
+<h3 class="" data-ka="ჰუმანიტარული მეცნიერებები" data-en="Humanities">ჰუმანიტარული მეცნიერებები</h3>
+<p class="" data-ka="ენა, ისტორია და ფილოსოფია — აღმოაჩინე ახალი გზები ადამიანის და სამყაროს გასაგებად." data-en="Language, history, and philosophy. Discover new ways to understand people and the world.">ენა, ისტორია და ფილოსოფია — აღმოაჩინე ახალი გზები ადამიანის და სამყაროს გასაგებად.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgp.html" class="school-row">
+<span class="row-code">SGP</span>
+<h3 class="" data-ka="პროფესიული განათლება" data-en="Vocational studies">პროფესიული განათლება</h3>
+<p class="" data-ka="ცოდნა პრაქტიკაში გადაიტანე. განავითარე უნარები, რომლითაც საკუთარი საქმის შექმნას შეძლებ." data-en="Put knowledge into practice. Develop the skills to create work of your own.">ცოდნა პრაქტიკაში გადაიტანე. განავითარე უნარები, რომლითაც საკუთარი საქმის შექმნას შეძლებ.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+<a href="/sgg.html" class="school-row">
+<span class="row-code">SGG</span>
+<h3 class="" data-ka="სახელმწიფო მართვა" data-en="Public governance">სახელმწიფო მართვა</h3>
+<p class="" data-ka="შეისწავლე გადაწყვეტილებები, რომლებიც საზოგადოებას აყალიბებს. იფიქრე ფართოდ. იმოქმედე გააზრებულად." data-en="Explore the decisions that shape society. Think broadly. Act with purpose.">შეისწავლე გადაწყვეტილებები, რომლებიც საზოგადოებას აყალიბებს. იფიქრე ფართოდ. იმოქმედე გააზრებულად.</p>
+<span class="row-plus" aria-hidden="true">+</span>
+</a>
+</div>
+</div>
+</section>
+<section class="campus-editorial">
+<div class="campus-editorial-image">
+<div class="motion-art community-art" aria-hidden="true">
+<svg viewBox="0 0 700 700" fill="none">
+<g class="art-grid">
+<path d="M50 0V700M0 50H700"/>
+<path d="M115 0V700M0 115H700"/>
+<path d="M180 0V700M0 180H700"/>
+<path d="M245 0V700M0 245H700"/>
+<path d="M310 0V700M0 310H700"/>
+<path d="M375 0V700M0 375H700"/>
+<path d="M440 0V700M0 440H700"/>
+<path d="M505 0V700M0 505H700"/>
+<path d="M570 0V700M0 570H700"/>
+<path d="M635 0V700M0 635H700"/>
+</g>
+<g class="community-rings">
+<circle cx="350" cy="350" r="245"/>
+<circle cx="350" cy="350" r="180"/>
+<circle cx="350" cy="350" r="110"/>
+</g>
+<g class="art-orbit">
+<path d="M105 350h490M350 105v490" stroke-dasharray="5 12"/>
+<circle cx="350" cy="105" r="24" class="art-dot"/>
+<circle cx="595" cy="350" r="16" class="art-dot"/>
+</g>
+<g class="community-block block-a">
+<rect x="205" y="205" width="105" height="105"/>
+<path d="M225 230h65M225 250h45M225 270h65"/>
+</g>
+<g class="community-block block-b">
+<rect x="390" y="390" width="105" height="105"/>
+<path d="M410 415h65M410 435h45M410 455h65"/>
+</g>
+<text x="350" y="375" text-anchor="middle" class="community-word">WE.</text>
+<text x="90" y="640" class="art-meta">LEARN TOGETHER. GO FURTHER.</text>
+</svg>
+<div class="art-caption">
+<span>SAGIT / CAMPUS LIFE</span>
+<span>ONE CAMPUS · MANY PERSPECTIVES</span>
+</div>
+</div>
+</div>
+<div class="campus-editorial-copy">
+<div class="eyebrow">LIFE BEYOND THE LECTURE</div>
+<h2 class="" data-ka="სწავლობ.
+პოულობ.
+ეკუთვნი." data-en="LEARN.
+CONNECT.
+BELONG.">სწავლობ.
+პოულობ.
+ეკუთვნი.</h2>
+<p class="" data-ka="ბიბლიოთეკის სიმშვიდე. პლაზის ენერგია. მოედნის საერთო რიტმი. გაიცანი სივრცეები, რომლებიც სტუდენტურ ცხოვრებას ქმნის." data-en="The focus of the library. The energy of the plaza. The shared rhythm of the pitch. Get to know the places that make university life.">ბიბლიოთეკის სიმშვიდე. პლაზის ენერგია. მოედნის საერთო რიტმი. გაიცანი სივრცეები, რომლებიც სტუდენტურ ცხოვრებას ქმნის.</p>
+<a class="button gold" href="/campus.html">
+<span class="" data-ka="კამპუსის გზამკვლევი" data-en="The campus guide">კამპუსის გზამკვლევი</span>
+</a>
+</div>
+</section>
+<section class="section wrap">
+<div class="section-heading">
+<div>
+<div class="eyebrow">IDEAS INTO ACTION</div>
+<h2 class="" data-ka="კარგი კითხვით
+ყველაფერი იწყება." data-en="Everything starts
+with a better question.">კარგი კითხვით
+ყველაფერი იწყება.</h2>
+</div>
+<p class="" data-ka="რაც დღეს გაინტერესებს, ხვალ შენი საქმე შეიძლება გახდეს." data-en="What makes you curious today could become your work tomorrow.">რაც დღეს გაინტერესებს, ხვალ შენი საქმე შეიძლება გახდეს.</p>
+</div>
+<div class="feature-editorial">
+<div class="feature-photo">
+<div class="motion-art research-art" aria-hidden="true">
+<svg viewBox="0 0 700 700" fill="none">
+<g class="art-grid">
+<path d="M50 0V700M0 50H700"/>
+<path d="M115 0V700M0 115H700"/>
+<path d="M180 0V700M0 180H700"/>
+<path d="M245 0V700M0 245H700"/>
+<path d="M310 0V700M0 310H700"/>
+<path d="M375 0V700M0 375H700"/>
+<path d="M440 0V700M0 440H700"/>
+<path d="M505 0V700M0 505H700"/>
+<path d="M570 0V700M0 570H700"/>
+<path d="M635 0V700M0 635H700"/>
+</g>
+<path class="research-axis" d="M110 570h480M130 590V130"/>
+<g class="research-bars">
+<rect x="145" y="480" width="50" height="90" style="--bar-delay:0s"/>
+<rect x="225" y="420" width="50" height="150" style="--bar-delay:-0.4s"/>
+<rect x="305" y="360" width="50" height="210" style="--bar-delay:-0.8s"/>
+<rect x="385" y="300" width="50" height="270" style="--bar-delay:-1.2000000000000002s"/>
+<rect x="465" y="240" width="50" height="330" style="--bar-delay:-1.6s"/>
+</g>
+<path class="research-signal" d="M105 420h100l50-85 65 30 80-150 80 30 100-125"/>
+<circle cx="580" cy="120" r="11" class="signal-dot"/>
+<text x="145" y="105" class="art-meta">QUESTION. EXPERIMENT. DISCOVER.</text>
+<text x="560" y="640" text-anchor="end" class="research-symbol">?</text>
+</svg>
+<div class="art-caption">
+<span>SAGIT / RESEARCH</span>
+<span>EVERY DISCOVERY STARTS WITH A QUESTION</span>
+</div>
+</div>
+</div>
+<div>
+<span class="editorial-tag">RESEARCH & DISCOVERY</span>
+<h3 class="" data-ka="„და რომ ვცადოთ?“" data-en="“What if we tried?”">„და რომ ვცადოთ?“</h3>
+<p class="" data-ka="ხელოვნური ინტელექტი, კიბერუსაფრთხოება, მდგრადი გარემო და ციფრული კულტურა. გაიცანი იდეები, რომელთა შესწავლაც ღირს." data-en="Artificial intelligence, cybersecurity, sustainability, and digital culture. Explore ideas worth pursuing.">ხელოვნური ინტელექტი, კიბერუსაფრთხოება, მდგრადი გარემო და ციფრული კულტურა. გაიცანი იდეები, რომელთა შესწავლაც ღირს.</p>
+<a class="text-link" href="/research.html">
+<span class="" data-ka="აღმოაჩინე კვლევის მიმართულებები" data-en="Discover research areas">აღმოაჩინე კვლევის მიმართულებები</span>
+</a>
+</div>
+</div>
+</section>
+<section class="section wrap university-stories">
+<div class="section-heading">
+<div>
+<div class="eyebrow">THE SAGIT EXPERIENCE</div>
+<h2 class="" data-ka="საღუნის ამბები." data-en="Inside SAGIT.">საღუნის ამბები.</h2>
+</div>
+<p class="" data-ka="ახალი სივრცეები, ახალი პერსპექტივები და სტუდენტური იდეები." data-en="New spaces, new perspectives, and student ideas.">ახალი სივრცეები, ახალი პერსპექტივები და სტუდენტური იდეები.</p>
+</div>
+<div class="university-story-grid">
+<article>
+<img class="" src="/assets/images/newcampus.webp" alt="New campus" width="1536" height="864" loading="lazy">
+<div class="editorial-tag">CAMPUS</div>
+<h3 class="" data-ka="ახალი კამპუსი" data-en="The new campus">ახალი კამპუსი</h3>
+<p class="" data-ka="გაიცანი ახალი კამპუსის გეგმა: სასწავლო სივრცეები, ბიბლიოთეკა, საცხოვრებელი და სპორტული ზონები." data-en="Explore the new campus plan: learning spaces, the library, residence, and sports areas.">გაიცანი ახალი კამპუსის გეგმა: სასწავლო სივრცეები, ბიბლიოთეკა, საცხოვრებელი და სპორტული ზონები.</p>
+<a class="text-link" href="/campus.html">
+<span class="" data-ka="კამპუსის გზამკვლევი" data-en="Explore the campus">კამპუსის გზამკვლევი</span>
+</a>
+</article>
+<article>
+<img class="" src="/assets/images/international.webp" alt="International exchange programs" width="1536" height="864" loading="lazy">
+<div class="editorial-tag">INTERNATIONAL</div>
+<h3 class="" data-ka="გაცვლითი პროგრამები" data-en="Exchange programs">გაცვლითი პროგრამები</h3>
+<p class="" data-ka="ახალი გარემო და განსხვავებული ხედვა. გაცვლითი მიმართულებებისა და მონაწილეობის პირობების შესახებ ინფორმაციისთვის დაგვიკავშირდი." data-en="A new environment. A different perspective. Contact us for information about exchange opportunities and participation requirements.">ახალი გარემო და განსხვავებული ხედვა. გაცვლითი მიმართულებებისა და მონაწილეობის პირობების შესახებ ინფორმაციისთვის დაგვიკავშირდი.</p>
+<a class="text-link" href="/contact.html">
+<span class="" data-ka="გაიგე მეტი გაცვლის შესახებ" data-en="Ask about exchanges">გაიგე მეტი გაცვლის შესახებ</span>
+</a>
+</article>
+<article>
+<img class="" src="/assets/images/startups.webp" alt="Student startups and projects" width="1536" height="864" loading="lazy">
+<div class="editorial-tag">STUDENT IDEAS</div>
+<h3 class="" data-ka="სტუდენტური სტარტაპები" data-en="Student startups">სტუდენტური სტარტაპები</h3>
+<p class="" data-ka="პრობლემის აღმოჩენიდან პირველ გადაწყვეტამდე — გაეცანი კვლევით ინტერესებს და გაგვიზიარე შენი პროექტის იდეა." data-en="From spotting a problem to a first solution, explore our research interests and share your project idea.">პრობლემის აღმოჩენიდან პირველ გადაწყვეტამდე — გაეცანი კვლევით ინტერესებს და გაგვიზიარე შენი პროექტის იდეა.</p>
+<a class="text-link" href="/research.html">
+<span class="" data-ka="იდეები და კვლევა" data-en="Ideas and research">იდეები და კვლევა</span>
+</a>
+</article>
+</div>
+</section>
+<section class="next-move">
+<div class="wrap">
+<div class="eyebrow">THE NEXT CHAPTER</div>
+<h2 class="" data-ka="დაიწყე
+შენით." data-en="START
+WITH YOU.">დაიწყე
+შენით.</h2>
+<div class="next-move-bottom">
+<p class="" data-ka="გაეცანი პროგრამებს. შეადარე მიმართულებები. აირჩიე შენი შემდეგი ნაბიჯი." data-en="Explore the programs. Compare your options. Choose your next move.">გაეცანი პროგრამებს. შეადარე მიმართულებები. აირჩიე შენი შემდეგი ნაბიჯი.</p>
+<div>
+<a class="button" href="/programs.html">
+<span class="" data-ka="აღმოაჩინე პროგრამები" data-en="Explore programs">აღმოაჩინე პროგრამები</span>
+</a>
+<a class="text-link" href="/admissions.html">
+<span class="" data-ka="მიღების გზამკვლევი" data-en="Admissions guide">მიღების გზამკვლევი</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap footer-grid">
+<div>
+<a class="brand footer-brand" href="/index.html">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" loading="lazy">
+<span>SAGIT</span>
+</a>
+<p class="" data-ka="ცოდნა, იდეები და ახალი შესაძლებლობები." data-en="Knowledge, ideas, and new possibilities.">ცოდნა, იდეები და ახალი შესაძლებლობები.</p>
+</div>
+<div>
+<h3 class="" data-ka="აღმოაჩინე" data-en="Explore">აღმოაჩინე</h3>
+<a class="text-link" href="/about.html">
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a class="text-link" href="/programs.html">
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a class="text-link" href="/schools.html">
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a class="text-link" href="/campus.html">
+<span class="" data-ka="კამპუსი" data-en="Campus">კამპუსი</span>
+</a>
+<a class="text-link" href="/research.html">
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a class="text-link" href="/admissions.html">
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</div>
+<div>
+<h3 class="" data-ka="დარჩი კავშირზე" data-en="Stay connected">დარჩი კავშირზე</h3>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="Instagram · @sgt_uni" data-en="Instagram · @sgt_uni">Instagram · @sgt_uni</span>
+</a>
+<a class="text-link" href="/contact.html">
+<span class="" data-ka="კითხვები და იდეები" data-en="Questions and ideas">კითხვები და იდეები</span>
+</a>
+<a class="text-link" href="/admissions.html#faq">
+<span class="" data-ka="ხშირად დასმული კითხვები" data-en="Frequently asked questions">ხშირად დასმული კითხვები</span>
+</a>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<span>© 2026 SAGIT</span>
+<span class="" data-ka="ცოდნა მომავლისთვის." data-en="Knowledge for the future.">ცოდნა მომავლისთვის.</span>
+</div>
+</footer>
 </body>
 </html>
-
-
-<style>
-.hero {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-</style>

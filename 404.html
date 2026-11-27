@@ -1,113 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGIT - 404 Not Found</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="/assets/style/modern.css">
-    <link rel="stylesheet" href="/assets/style/404.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="/assets/js/language.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>გვერდი ვერ მოიძებნა · SAGIT</title>
+<meta name="description" content="SAGIT — აღმოაჩინე საღუნის პროგრამები, სკოლები და სტუდენტური ცხოვრება.">
+<meta name="theme-color" content="#641b2b">
+<link rel="canonical" href="https://www.sagit.com.ge/404.html">
+<meta property="og:title" content="გვერდი ვერ მოიძებნა · SAGIT">
+<meta property="og:description" content="შენი მომავალი იწყება აქ. აღმოაჩინე SAGIT-ის პროგრამები და სკოლები.">
+<meta property="og:image" content="https://www.sagit.com.ge/assets/images/banner1.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/webp" href="/assets/images/bg.webp">
+<link rel="stylesheet" href="/assets/style/site.css">
+<link rel="stylesheet" href="/assets/style/editorial.css">
+<script src="/assets/js/site.js" defer>
+</script>
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-                <span class="loading-text">SAGIT</span>
-            </div>
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-            </div>
-            <p class="loading-message">?????????...</p>
-        </div>
-    </div>
-
-    <header class="main-header">
-        <div class="logo">
-            <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-            <span class="logo-text">SAGIT</span>
-        </div>
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-            <span class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link" data-i18n="navigation.home">მთავარი</a>
-            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
-            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
-            <a href="contact.html" class="nav-link" data-i18n="navigation.contact">კონტაქტი</a>
-        </nav>
-        <div class="social-icons">
-            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
-                </svg>
-            </a>
-        </div>
-    </header>
-
-    <div class="error-container">
-        <div class="error-code">404</div>
-        <div class="error-message">
-            <h2 data-i18n="error.title">მანდ რა გინდა ეს... ?</h2>
-            <p data-i18n="error.message">გვერდი, რომელსაც ეძებთ, არ არსებობს.</p>
-        </div>
-        <a href="/" class="btn" data-i18n="error.backHome">მთავარ გვერდზე დაბრუნება</a>
-    </div>
-    <div style="margin:32px; text-align:center;">
-        <img src="/assets/images/hqdefault.jpg" alt="404 Image" style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 2px 16px rgba(0,0,0,0.5); opacity:0.92;" />
-    </div>
-
-    <script>
-    // Loading screen functionality
-window.addEventListener('load', function() {
-    const loadingScreen = document.getElementById('loading-screen');
-
-    // Add a small delay for better UX
-    setTimeout(function() {
-        loadingScreen.classList.add('hidden');
-
-        // Remove from DOM after animation completes
-        setTimeout(function() {
-            loadingScreen.style.display = 'none';
-        }, 500);
-    }, 800);
-});
-    // Mobile menu toggle functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    });
-    </script>
+<body data-page="404" data-title-ka="გვერდი ვერ მოიძებნა" data-title-en="Page not found">
+<a class="skip" href="#main">
+<span class="" data-ka="კონტენტზე გადასვლა" data-en="Skip to content">კონტენტზე გადასვლა</span>
+</a>
+<div class="topbar">
+<div class="wrap">
+<span>SARDIVAL GHOBEGLEJIASHVILI INSTITUTE OF TECHNOLOGY</span>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="სტუდენტური ცხოვრება @sgt_uni" data-en="Campus life @sgt_uni">სტუდენტური ცხოვრება @sgt_uni</span>
+</a>
+</div>
+</div>
+<header class="header">
+<div class="wrap header-inner">
+<a class="brand" href="/index.html" aria-label="SAGIT home">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" fetchpriority="high">
+<span>SAGIT<small>
+<span class="" data-ka="სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი" data-en="Sardival Ghobeglejiashvili Institute of Technology">სარდივალ ღობეგლეჯიაშვილის ტექნიკური უნივერსიტეტი</span>
+</small>
+</span>
+</a>
+<button class="menu-toggle" aria-controls="navigation" aria-expanded="false">
+<span class="" data-ka="მენიუ" data-en="Menu">მენიუ</span> <span aria-hidden="true">☰</span>
+</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="/about.html" >
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a href="/programs.html" >
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a href="/schools.html" >
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a href="/campus.html" >
+<span class="" data-ka="კამპუსი" data-en="Campus">კამპუსი</span>
+</a>
+<a href="/research.html" >
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a href="/admissions.html" >
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</nav>
+<div class="header-actions">
+<button id="language" class="language" aria-label="Switch language">EN</button>
+<a class="button small" href="/contact.html">
+<span class="" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</span>
+</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="wrap error-page">
+<div class="error-code">404</div>
+<h1 class="" data-ka="ეს აუდიტორია ცარიელია." data-en="This lecture hall is empty.">ეს აუდიტორია ცარიელია.</h1>
+<p class="" data-ka="გვერდი ვერ მოიძებნა. მთავარი გვერდიდან ახალი გზა ვცადოთ." data-en="We could not find this page. Let’s try a new direction from the homepage.">გვერდი ვერ მოიძებნა. მთავარი გვერდიდან ახალი გზა ვცადოთ.</p>
+<a class="button" href="/index.html">
+<span class="" data-ka="მთავარზე დაბრუნება" data-en="Back to the homepage">მთავარზე დაბრუნება</span>
+</a>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap footer-grid">
+<div>
+<a class="brand footer-brand" href="/index.html">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" loading="lazy">
+<span>SAGIT</span>
+</a>
+<p class="" data-ka="ცოდნა, იდეები და ახალი შესაძლებლობები." data-en="Knowledge, ideas, and new possibilities.">ცოდნა, იდეები და ახალი შესაძლებლობები.</p>
+</div>
+<div>
+<h3 class="" data-ka="აღმოაჩინე" data-en="Explore">აღმოაჩინე</h3>
+<a class="text-link" href="/about.html">
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a class="text-link" href="/programs.html">
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a class="text-link" href="/schools.html">
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a class="text-link" href="/campus.html">
+<span class="" data-ka="კამპუსი" data-en="Campus">კამპუსი</span>
+</a>
+<a class="text-link" href="/research.html">
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a class="text-link" href="/admissions.html">
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</div>
+<div>
+<h3 class="" data-ka="დარჩი კავშირზე" data-en="Stay connected">დარჩი კავშირზე</h3>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="Instagram · @sgt_uni" data-en="Instagram · @sgt_uni">Instagram · @sgt_uni</span>
+</a>
+<a class="text-link" href="/contact.html">
+<span class="" data-ka="კითხვები და იდეები" data-en="Questions and ideas">კითხვები და იდეები</span>
+</a>
+<a class="text-link" href="/admissions.html#faq">
+<span class="" data-ka="ხშირად დასმული კითხვები" data-en="Frequently asked questions">ხშირად დასმული კითხვები</span>
+</a>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<span>© 2026 SAGIT</span>
+<span class="" data-ka="ცოდნა მომავლისთვის." data-en="Knowledge for the future.">ცოდნა მომავლისთვის.</span>
+</div>
+</footer>
 </body>
 </html>
-
-
-
-
