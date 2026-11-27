@@ -1,1 +1,1 @@
-{"name":"sagit-website","private":true,"version":"2.0.0","type":"module","scripts":{"build":"node scripts/build.mjs","check":"node scripts/check.mjs","preview":"node scripts/serve.mjs"},"engines":{"node":">=20"}}
+{"name":"sagit-website","private":true,"version":"2.0.0","type":"module","scripts":{"build":"node scripts/build.mjs","check":"node scripts/check.mjs && node scripts/check-campus.mjs","preview":"node scripts/serve.mjs"},"engines":{"node":">=20"}}

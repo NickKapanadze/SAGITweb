@@ -10,6 +10,7 @@
     languageButton.setAttribute('aria-label', language === 'ka' ? 'Switch to English' : 'ქართულ ენაზე გადართვა');
     document.querySelector('nav').setAttribute('aria-label',language === 'ka' ? 'მთავარი ნავიგაცია' : 'Main navigation');
     document.querySelector('.filter-bar')?.setAttribute('aria-label',language === 'ka' ? 'პროგრამის საფეხური' : 'Program level');
+    document.dispatchEvent(new CustomEvent('sagit:language',{detail:language}));
   }
   languageButton.addEventListener('click', () => { language = language === 'ka' ? 'en' : 'ka'; try { localStorage.setItem('language', language); } catch {} applyLanguage(); });
   applyLanguage();
@@ -24,4 +25,22 @@
     document.querySelectorAll('.filter').forEach(other => { const selected = other === button; other.classList.toggle('active',selected); other.setAttribute('aria-pressed',String(selected)); });
     document.querySelectorAll('[data-level]').forEach(card => { card.hidden = button.dataset.filter !== 'all' && card.dataset.level !== button.dataset.filter; });
   }));
+  // Load the campus renderer only on pages that show it and only near the viewport.
+  const campusRoots=document.querySelectorAll('[data-campus]');
+  function campusFallback(root){
+    root.classList.add('campus-static');
+    root.querySelectorAll('[data-destination]').forEach(button=>{
+      const anchor=document.createElement('a');anchor.href=button.dataset.fallback;anchor.className=button.className;
+      while(button.firstChild)anchor.append(button.firstChild);button.replaceWith(anchor);
+    });
+    const hint=root.querySelector('.campus-hint');hint.dataset.ka='აირჩიე ადგილი სიიდან მეტი ინფორმაციისთვის';hint.dataset.en='Choose a destination from the guide to learn more';hint.textContent=hint.dataset[language];
+  }
+  if(campusRoots.length){
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{if(!entry.isIntersecting)return;observer.unobserve(entry.target);
+        import('./campus.js').then(({initCampus})=>initCampus(entry.target)).catch(()=>campusFallback(entry.target));
+      });
+    },{rootMargin:'200px'});
+    campusRoots.forEach(root=>observer.observe(root));
+  }
 })();

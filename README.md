@@ -32,4 +32,14 @@ Verify the Render deployment first. Add both `www.sagit.com.ge` and `sagit.com.g
 
 ## Content and privacy
 
-All public copy speaks as the university. The contact page links to the existing Instagram account `@sgt_uni`; it does not pretend to send messages or collect identity documents. Generic social links, unverified contact details, expired admission dates, and the expired countdown were removed. New admissions dates await publication rather than being invented. Program filters, native expandable details, mobile navigation, and language selection are implemented without external JavaScript dependencies. The campus map reference in `references/` is reserved for later work and is not published by the build.
+All public copy speaks as the university. The contact page links to the existing Instagram account `@sgt_uni`; it does not pretend to send messages or collect identity documents. Generic social links, unverified contact details, expired admission dates, and the expired countdown were removed. New admissions dates await publication rather than being invented. Program filters, native expandable details, mobile navigation, and language selection are implemented without external JavaScript dependencies.
+
+## Interactive campus
+
+The homepage and `/campus.html` use the 14 destinations in the Instagram plan as their layout reference. `assets/js/campus-model.js` contains named destinations, bilingual copy, and architectural geometry. It is a schematic interpretation of a low-resolution plan, not surveyed dimensions or verified building heights. Only Business and Humanities have dedicated named school buildings in the plan; other school links use the academic quarter rather than inventing separate building positions.
+
+`scripts/campus-template.mjs` creates the interface and an SVG landscape visible before JavaScript loads. The locally served renderer loads on demand, uses Canvas with projected 3D geometry, and redraws only for interaction, camera transitions, resizing, or language changes. It does not use a 3D engine, external map API, paid service, downloaded mesh, video, or continuous animation. Render resolution is capped at 1.75 device pixels per CSS pixel. Reduced-motion preferences skip camera animation.
+
+Visitors can select numbered pins or the destination list, filter by learning/life/sport, rotate, zoom, switch to a top-down plan, and open school pages. Campus deep links use `?place=business`, `?place=humanities`, or any destination key. School pages link into the relevant campus location. Touch devices retain vertical page scrolling; horizontal drag rotates. Zoom buttons work on all devices; modified wheel and pinch zoom are supported.
+
+The source plan is preserved in `references/` and published at `/assets/images/campus-plan.jpg`. It is the profile-size public image, not verified original resolution. Both no-JavaScript and canvas-unavailable paths preserve a static landscape and links. `npm run check` verifies plan geography, destinations, finite camera projection, school links, and compressed-size budgets alongside the page/link checks.

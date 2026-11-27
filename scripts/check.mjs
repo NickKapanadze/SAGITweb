@@ -16,11 +16,11 @@ for(const file of files){
  for(const match of html.matchAll(/data-ka="([^"]*)" data-en="([^"]*)"/g)){assert.ok(match[1]&&match[2],`${file}: empty translation`);translations++;}
  for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   const value=match[1];if(/^(https?:|mailto:)/.test(value))continue;
-  const [url,hash]=value.split('#');const target=url?path.resolve(root,'.'+(url.startsWith('/')?url:'/'+url)):path.join(root,file);
+  const parsed=new URL(value,'https://local.test/'+file),url=parsed.pathname,hash=parsed.hash.slice(1);const target=path.resolve(root,'.'+url);
   await access(target);links++;
   if(hash){const targetHtml=await readFile(target,'utf8');assert.ok(targetHtml.includes(`id="${hash}"`),`${file}: broken fragment ${value}`);}
  }
 }
-assert.equal(files.length,15);
+assert.equal(files.length,16);
 const js=await readFile('assets/js/site.js','utf8');assert.ok(js.includes('try { localStorage.setItem'), 'storage-disabled browsers supported');
 console.log(`PASS: ${files.length} pages, ${links} local links/assets, ${translations} bilingual strings, landmarks, unique IDs, and all fragment targets.`);
