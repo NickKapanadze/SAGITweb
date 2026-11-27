@@ -1,0 +1,26 @@
+import {readdir,readFile,access} from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root=path.resolve('dist');
+const files=(await readdir(root)).filter(f=>f.endsWith('.html'));
+let links=0,translations=0;
+for(const file of files){
+ const html=await readFile(path.join(root,file),'utf8');
+ assert.equal((html.match(/<h1\b/g)||[]).length,1,`${file}: needs one h1`);
+ assert.ok(html.includes('<html lang="ka">'),`${file}: Georgian default`);
+ assert.ok(html.includes('<main id="main">'),`${file}: main landmark`);
+ assert.ok(!/href="#"|loading-screen|2025-10-20/.test(html),`${file}: obsolete placeholder`);
+ assert.ok(!/იუმორ|სატირ|გამოგონილ|satir|fiction|humor|KA \/ EN/i.test(html),`${file}: stay in university character`);
+ const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(ids.length,new Set(ids).size,`${file}: duplicate ids`);
+ for(const match of html.matchAll(/data-ka="([^"]*)" data-en="([^"]*)"/g)){assert.ok(match[1]&&match[2],`${file}: empty translation`);translations++;}
+ for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)){
+  const value=match[1];if(/^(https?:|mailto:)/.test(value))continue;
+  const [url,hash]=value.split('#');const target=url?path.resolve(root,'.'+(url.startsWith('/')?url:'/'+url)):path.join(root,file);
+  await access(target);links++;
+  if(hash){const targetHtml=await readFile(target,'utf8');assert.ok(targetHtml.includes(`id="${hash}"`),`${file}: broken fragment ${value}`);}
+ }
+}
+assert.equal(files.length,15);
+const js=await readFile('assets/js/site.js','utf8');assert.ok(js.includes('try { localStorage.setItem'), 'storage-disabled browsers supported');
+console.log(`PASS: ${files.length} pages, ${links} local links/assets, ${translations} bilingual strings, landmarks, unique IDs, and all fragment targets.`);

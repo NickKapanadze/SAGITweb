@@ -1,307 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>კონტაქტი - SAGIT</title>
-
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="/assets/style/modern.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="/assets/js/language.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>კონტაქტი · SAGIT</title>
+<meta name="description" content="SAGIT — აღმოაჩინე საღუნის პროგრამები, სკოლები და სტუდენტური ცხოვრება.">
+<meta name="theme-color" content="#641b2b">
+<link rel="canonical" href="https://www.sagit.com.ge/contact.html">
+<meta property="og:title" content="კონტაქტი · SAGIT">
+<meta property="og:description" content="შენი მომავალი იწყება აქ. აღმოაჩინე SAGIT-ის პროგრამები და სკოლები.">
+<meta property="og:image" content="https://www.sagit.com.ge/assets/images/banner1.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/webp" href="/assets/images/bg.webp">
+<link rel="stylesheet" href="/assets/style/site.css">
+<script src="/assets/js/site.js" defer>
+</script>
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-                <span class="loading-text">SAGIT</span>
-            </div>
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-            </div>
-            <p class="loading-message">?????????...</p>
-        </div>
-    </div>
-  
-    <header class="main-header">
-        <div class="logo">
-            <img src="/assets/images/bg.webp" alt="SAGIT Logo">
-            <span class="logo-text">SAGIT</span>
-        </div>
-        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-            <span class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </button>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link" data-i18n="navigation.home">მთავარი</a>
-            <a href="about.html" class="nav-link" data-i18n="navigation.about">ჩვენს შესახებ</a>
-            <a href="programs.html" class="nav-link" data-i18n="navigation.programs">პროგრამები</a>
-            <a href="admissions.html" class="nav-link" data-i18n="navigation.admissions">მიღება</a>
-            <a href="contact.html" class="nav-link active" data-i18n="navigation.contact">კონტაქტი</a>
-        </nav>
-        <div class="social-icons">
-            <button id="lang-toggle" class="lang-toggle" data-i18n="buttons.switchLang">English</button>
-            <a href="https://www.instagram.com/sgt_uni/" target="_blank" class="ig-icon" aria-label="Instagram">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="12" cy="12" r="5" stroke="#E6B76C" stroke-width="2" fill="none"/>
-                  <circle cx="17" cy="7" r="1.2" fill="#E6B76C"/>
-                </svg>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" class="social-icon" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-    </header>
-
-    <section class="banner">
-        <img src="/assets/images/banner1.webp" alt="Contact Us" style="height: 400px;">
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h1 class="text-center" data-i18n="contactPage.title">დაგვიკავშირდით</h1>
-            <p class="text-center" data-i18n="contactPage.subtitle">გაქვთ კითხვები? დაგვიკავშირდით და SAGIT-ის გუნდი დაგეხმარებათ.</p>
-            
-            <div class="grid" style="margin-top: 3rem;">
-                <div>
-                    <h2 data-i18n="contactPage.contactInfo">საკონტაქტო ინფორმაცია</h2>
-                    
-                    <div style="margin-top: 2rem;">
-                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.address">მისამართი:</strong><br>ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი, 0108, საქართველო</p>
-                        
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.phone">ტელეფონი:</strong><br>+995 32 222 33 44</p>
-                        
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.email">ელ-ფოსტა:</strong><br>info@sagit.edu.ge</p>
-                        
-                        <p style="margin-top: 1.5rem;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 10px;"></i> <strong data-i18n="contactPage.workingHours">სამუშაო საათები:</strong><br><span data-i18n="contactPage.workingHoursValue">ორშაბათი - პარასკევი: 9:00 - 18:00<br>შაბათი: 10:00 - 15:00<br>კვირა: დახურულია</span></p>
-                    </div>
-                    
-                    <div style="margin-top: 2rem;">
-                        <h3 data-i18n="contactPage.followUs">გამოგვყევით სოციალურ ქსელებში</h3>
-                        <div style="margin-top: 1rem; display: flex; gap: 15px;">
-                            <a href="https://www.instagram.com/sgt_uni/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.youtube.com/" class="social-icon" style="font-size: 1.5rem;"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h2 data-i18n="contactPage.writeToUs">მოგვწერეთ</h2>
-                    
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name" data-i18n="contactPage.form.name">სახელი და გვარი</label> *
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" data-i18n="contactPage.form.email">ელ-ფოსტა</label> *
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone" data-i18n="contactPage.form.phone">ტელეფონის ნომერი</label>
-                            <input type="tel" id="phone" class="form-control">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject" data-i18n="contactPage.form.subject">თემა</label> *
-                            <select id="subject" class="form-control" required>
-                                <option value="" data-i18n="contactPage.form.selectSubject">აირჩიეთ თემა</option>
-                                <option value="admission" data-i18n="contactPage.form.admission">მიღების შესახებ</option>
-                                <option value="programs" data-i18n="contactPage.form.programs">საგანმანათლებლო პროგრამები</option>
-                                <option value="scholarships" data-i18n="contactPage.form.scholarships">სტიპენდიები და ფინანსური დახმარება</option>
-                                <option value="careers" data-i18n="contactPage.form.careers">კარიერა SAGIT-ში</option>
-                                <option value="other" data-i18n="contactPage.form.other">სხვა</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" data-i18n="contactPage.form.message">შეტყობინება</label> *
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn" style="width: 100%;" data-i18n="contactPage.form.send">გაგზავნა</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" style="padding-top: 0;">
-        <div class="container">
-            <h2 class="text-center" data-i18n="contactPage.location">ჩვენი მდებარეობა</h2>
-            
-            <div style="margin-top: 2rem; width: 100%; height: 450px; border-radius: 8px; overflow: hidden;">
-                <!-- Google Maps embed for Kvemo Ponichala, Rustaveli Street 19, Tbilisi -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.5!2d44.816!3d41.698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447354c9b9c5e5%3A0x7e9c4b5f6d8a1234!2sRustaveli%20St%2019%2C%20Kvemo%20Ponichala%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1726492800000!5m2!1sen!2sge" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" style="background-color: rgba(30, 10, 10, 0.75);">
-        <div class="container">
-            <h2 class="text-center" data-i18n="contactPage.departments">დეპარტამენტები</h2>
-            <p class="text-center" data-i18n="contactPage.departmentsSubtitle">პირდაპირ დაუკავშირდით შესაბამის დეპარტამენტს თქვენი კითხვებით</p>
-            
-            <div class="grid">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3 data-i18n="contactPage.admissionsDept">მიღების დეპარტამენტი</h3>
-                    <p data-i18n="contactPage.admissionsDeptDesc">დაგვიკავშირდით მიღების პროცესთან და მოთხოვნებთან დაკავშირებული კითხვებით.</p>
-                    <p><i class="fas fa-envelope"></i> admissions@sagit.edu.ge</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 55</p>
-                </div>
-                
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h3 data-i18n="contactPage.academicDept">აკადემიური დეპარტამენტი</h3>
-                    <p data-i18n="contactPage.academicDeptDesc">დაგვიკავშირდით სასწავლო პროგრამებთან და კურსებთან დაკავშირებული კითხვებით.</p>
-                    <p><i class="fas fa-envelope"></i> academic@sagit.edu.ge</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 66</p>
-                </div>
-                
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3 data-i18n="contactPage.financialAid">ფინანსური დახმარება</h3>
-                    <p data-i18n="contactPage.financialAidDesc">დაგვიკავშირდით სტიპენდიებთან და ფინანსურ დახმარებასთან დაკავშირებული კითხვებით.</p>
-                    <p><i class="fas fa-envelope"></i> financial.aid@sagit.edu.ge</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 77</p>
-                </div>
-                
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3 data-i18n="contactPage.partnerships">პარტნიორობა და თანამშრომლობა</h3>
-                    <p data-i18n="contactPage.partnershipsDesc">დაგვიკავშირდით ბიზნეს პარტნიორობასთან და აკადემიურ თანამშრომლობასთან დაკავშირებით.</p>
-                    <p><i class="fas fa-envelope"></i> partnerships@sagit.edu.ge</p>
-                    <p><i class="fas fa-phone"></i> +995 32 222 33 88</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container text-center">
-            <h2>ხშირად დასმული კითხვები</h2>
-            <p>ვერ იპოვეთ პასუხი თქვენს კითხვაზე? გაეცანით ჩვენს ხშირად დასმულ კითხვებს ან დაგვიკავშირდით პირდაპირ.</p>
-            <a href="#" class="btn" style="margin-top: 1.5rem;">FAQ</a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>SAGIT</h4>
-                    <p>საქართველოს ტექნოლოგიების ინსტიტუტი - თანამედროვე განათლება ინოვაციური მომავლისთვის</p>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/sgt_uni/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>სწრაფი ბმულები</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">მთავარი</a></li>
-                        <li><a href="about.html">ჩვენს შესახებ</a></li>
-                        <li><a href="programs.html">პროგრამები</a></li>
-                        <li><a href="admissions.html">მიღება</a></li>
-                        <li><a href="contact.html">კონტაქტი</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 data-i18n="footer.contact">კონტაქტი</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">ქვემო ფონიჭალა, რუსთავის ქუჩა 19, თბილისი</span></p>
-                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+995 32 222 33 44</span></p>
-                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.email">info@sagit.edu.ge</span></p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>🅮 2025 <span data-i18n="university.shortName">SAGIT</span>.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-    // Loading screen functionality
-window.addEventListener('load', function() {
-    const loadingScreen = document.getElementById('loading-screen');
-
-    // Add a small delay for better UX
-    setTimeout(function() {
-        loadingScreen.classList.add('hidden');
-
-        // Remove from DOM after animation completes
-        setTimeout(function() {
-            loadingScreen.style.display = 'none';
-        }, 500);
-    }, 800);
-});
-    // Mobile menu toggle functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-        
-        // Form submission
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Get current language and show appropriate success message
-                const currentLang = localStorage.getItem('language') || 'ka';
-                const translations = window.translations || {};
-                const successMessage = translations[currentLang]?.contactPage?.form?.successMessage || 
-                    'მადლობა! თქვენი შეტყობინება წარმატებით გაიგზავნა. ჩვენ მალე დაგიკავშირდებით.';
-                
-                alert(successMessage);
-                contactForm.reset();
-            });
-        }
-    });
-    </script>
+<body data-title-ka="კონტაქტი" data-title-en="Contact">
+<a class="skip" href="#main">
+<span class="" data-ka="კონტენტზე გადასვლა" data-en="Skip to content">კონტენტზე გადასვლა</span>
+</a>
+<div class="topbar">
+<div class="wrap">
+<span>SARDIVAL GHOBEGLEJIASHVILI INSTITUTE OF TECHNOLOGY</span>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="სტუდენტური ცხოვრება @sgt_uni" data-en="Campus life @sgt_uni">სტუდენტური ცხოვრება @sgt_uni</span>
+</a>
+</div>
+</div>
+<header class="header">
+<div class="wrap header-inner">
+<a class="brand" href="/index.html" aria-label="SAGIT home">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" fetchpriority="high">
+<span>SAGIT<small>
+<span class="" data-ka="სარდივალის ტექნიკური უნივერსიტეტი" data-en="Sardival’s Technical University">სარდივალის ტექნიკური უნივერსიტეტი</span>
+</small>
+</span>
+</a>
+<button class="menu-toggle" aria-controls="navigation" aria-expanded="false">
+<span class="" data-ka="მენიუ" data-en="Menu">მენიუ</span> <span aria-hidden="true">☰</span>
+</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="/index.html" >
+<span class="" data-ka="მთავარი" data-en="Home">მთავარი</span>
+</a>
+<a href="/about.html" >
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a href="/programs.html" >
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a href="/schools.html" >
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a href="/research.html" >
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a href="/admissions.html" >
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</nav>
+<div class="header-actions">
+<button id="language" class="language" aria-label="Switch language">EN</button>
+<a class="button small" href="/contact.html">
+<span class="" data-ka="კონტაქტი" data-en="Contact">კონტაქტი</span>
+</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="page-intro wrap">
+<div class="eyebrow">SAGIT / <span class="" data-ka="მოგვიყევი შენი იდეა." data-en="Tell us what you are thinking.">მოგვიყევი შენი იდეა.</span>
+</div>
+<h1 class="" data-ka="მოგვიყევი შენი იდეა." data-en="Tell us what you are thinking.">მოგვიყევი შენი იდეა.</h1>
+<p class="lede" data-ka="კითხვა, თანამშრომლობა თუ შემდეგი დიდი იდეა — საუბარი აქ იწყება." data-en="A question, a collaboration, or the next big idea. Start a conversation.">კითხვა, თანამშრომლობა თუ შემდეგი დიდი იდეა — საუბარი აქ იწყება.</p>
+</section>
+<section class="wrap split section-tight">
+<div class="contact-panel">
+<div class="eyebrow">LET’S TALK</div>
+<h2 class="" data-ka="საღუნი სოციალურ ქსელში" data-en="SAGIT on social">საღუნი სოციალურ ქსელში</h2>
+<p class="" data-ka="შეგვხვდი იქ, სადაც საუნივერსიტეტო ამბები გრძელდება." data-en="Meet us where the campus stories continue.">შეგვხვდი იქ, სადაც საუნივერსიტეტო ამბები გრძელდება.</p>
+<a href="https://www.instagram.com/sgt_uni/" class="social-handle">@sgt_uni</a>
+<a class="button" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="გახსენი Instagram" data-en="Open Instagram">გახსენი Instagram</span>
+</a>
+<p class="muted" data-ka="ბმული გახსნის Instagram-ს. შეტყობინებას თავად აგზავნი შენი ანგარიშიდან." data-en="The link opens Instagram. You send the message yourself from your account.">ბმული გახსნის Instagram-ს. შეტყობინებას თავად აგზავნი შენი ანგარიშიდან.</p>
+</div>
+<div>
+<div class="eyebrow">BEFORE YOU WRITE</div>
+<h2 class="" data-ka="საუბრის კარგი დასაწყისი" data-en="A good place to start">საუბრის კარგი დასაწყისი</h2>
+<ul class="contact-topics">
+<li>
+<span class="" data-ka="საიტის იდეები და უკუკავშირი" data-en="Website ideas and feedback">საიტის იდეები და უკუკავშირი</span>
+</li>
+<li>
+<span class="" data-ka="სტუდენტური ცხოვრება და ამბები" data-en="Student life and stories">სტუდენტური ცხოვრება და ამბები</span>
+</li>
+<li>
+<span class="" data-ka="შემოქმედებითი თანამშრომლობა" data-en="Creative collaboration">შემოქმედებითი თანამშრომლობა</span>
+</li>
+<li>
+<span class="" data-ka="დაზიანებული ბმულის ან შეცდომის შეტყობინება" data-en="Reporting a broken link or error">დაზიანებული ბმულის ან შეცდომის შეტყობინება</span>
+</li>
+</ul>
+<a class="text-link" href="/admissions.html#faq">
+<span class="" data-ka="ჯერ კითხვებს გადახედე" data-en="Read the frequently asked questions">ჯერ კითხვებს გადახედე</span>
+</a>
+</div>
+</section>
+<section class="wrap">
+<div class="cta">
+<div>
+<div class="eyebrow">SAGIT COMMUNITY</div>
+<h2 class="" data-ka="შენი ადგილი აქ არის." data-en="There is a place for you here.">შენი ადგილი აქ არის.</h2>
+<p class="" data-ka="შემოგვიერთდი იქ, სადაც ამბები გრძელდება." data-en="Join us where the stories continue.">შემოგვიერთდი იქ, სადაც ამბები გრძელდება.</p>
+</div>
+<a class="button light" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="გვიპოვე Instagram-ზე" data-en="Find us on Instagram">გვიპოვე Instagram-ზე</span>
+</a>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap footer-grid">
+<div>
+<a class="brand footer-brand" href="/index.html">
+<img class="crest" src="/assets/images/bg.webp" alt="SAGIT crest" width="1536" height="864" loading="lazy">
+<span>SAGIT</span>
+</a>
+<p class="" data-ka="ცოდნა, იდეები და ახალი შესაძლებლობები." data-en="Knowledge, ideas, and new possibilities.">ცოდნა, იდეები და ახალი შესაძლებლობები.</p>
+</div>
+<div>
+<h3 class="" data-ka="აღმოაჩინე" data-en="Explore">აღმოაჩინე</h3>
+<a class="text-link" href="/about.html">
+<span class="" data-ka="ჩვენს შესახებ" data-en="About">ჩვენს შესახებ</span>
+</a>
+<a class="text-link" href="/programs.html">
+<span class="" data-ka="პროგრამები" data-en="Programs">პროგრამები</span>
+</a>
+<a class="text-link" href="/schools.html">
+<span class="" data-ka="სკოლები" data-en="Schools">სკოლები</span>
+</a>
+<a class="text-link" href="/research.html">
+<span class="" data-ka="კვლევა" data-en="Research">კვლევა</span>
+</a>
+<a class="text-link" href="/admissions.html">
+<span class="" data-ka="მიღება" data-en="Admissions">მიღება</span>
+</a>
+</div>
+<div>
+<h3 class="" data-ka="დარჩი კავშირზე" data-en="Stay connected">დარჩი კავშირზე</h3>
+<a class="text-link" href="https://www.instagram.com/sgt_uni/">
+<span class="" data-ka="Instagram · @sgt_uni" data-en="Instagram · @sgt_uni">Instagram · @sgt_uni</span>
+</a>
+<a class="text-link" href="/contact.html">
+<span class="" data-ka="კითხვები და იდეები" data-en="Questions and ideas">კითხვები და იდეები</span>
+</a>
+<a class="text-link" href="/admissions.html#faq">
+<span class="" data-ka="ხშირად დასმული კითხვები" data-en="Frequently asked questions">ხშირად დასმული კითხვები</span>
+</a>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<span>© 2026 SAGIT</span>
+<span class="" data-ka="ცოდნა მომავლისთვის." data-en="Knowledge for the future.">ცოდნა მომავლისთვის.</span>
+</div>
+</footer>
 </body>
 </html>
-
-
-
-
